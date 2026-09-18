@@ -1,0 +1,20 @@
+{
+  "problem": "lambda=1, f_beta(x,a)=(1+beta*cos(pi*x))*a, A={-1,0,1}, g_beta=V+b_beta*abs(V'), V=1-abs(sin(pi*x/2))",
+  "beta_quarters": [0, 1, 2],
+  "critics": ["MLP", "Min2"],
+  "value_nodes": 65536,
+  "contact_centers": [4096, 16384],
+  "contact_reciprocal_scales": [16, 32, 64],
+  "bellman_nodes": [16384, 65536],
+  "bellman_reciprocal_holds": [16, 32, 64],
+  "quadrature_panels_per_smooth_segment": [2, 8],
+  "bellman_successor_modes": ["lipschitz", "derivative"],
+  "beta_zero_cost": "Use the existing exact held-cost formula; no unnecessary quadrature.",
+  "hold_bias_cells": 4096,
+  "target_bounds": [0.6, 0.8, 1.0],
+  "precision_bits": 128,
+  "reference_use": "The analytic family supplies the common V Lipschitz bound and the Bellman hold-bias proof. Reference errors are only reported for calibration, never used to select checkpoints or scales.",
+  "timing": "Standalone certificate cost includes previously measured common value/Lipschitz preprocessing and, when used, derivative preprocessing, plus newly measured method and problem preprocessing. Shared dynamics preprocessing is charged in full to each standalone certificate. Search/tuning totals are reported separately. Wall times are single-run implementation measurements, not complexity claims.",
+  "scope": "Controlled stress test on two unchanged critics, one training seed, one analytic family. No claim of representative application workloads.",
+  "protocol": "Written before the new parameter sweep. All listed settings are retained. Implementation checks may precede the sweep. No expected winner is assumed."
+}

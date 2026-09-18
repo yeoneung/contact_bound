@@ -1,0 +1,1756 @@
+{
+  "precision_bits": 128,
+  "hashes": {
+    "code\\experiments\\compare_verified_estimators.py": "4a49b9976785d6a2ab77f729350b057dfc0c9f417bde1fc229e6a4dd7063ae4f",
+    "code\\hjrl\\verified_arb.py": "e211131d2d4e8bdb2100d147be6df2b5850beba44a98be8e15af3438ccf9989e",
+    "code\\experiments\\verify_neural_policy.py": "d0b7761aa77078553f60f983f59540ec7c6e8f289729ccaead5dd84ccd2f1879",
+    "results/comparison_design.json": "5e846681f455db12cebb7cdfa9aa97ad91d2a330f3e39288cb53a5a266124174",
+    "results/verified_neural_models.pt": "b7bf384e38d2eef88a88840f848dc720860c99442dd5cb485927cb8bed7bee24"
+  },
+  "design": {
+    "fixed_critics": [
+      "MLP",
+      "Min2"
+    ],
+    "training_seed": 1,
+    "retrain": false,
+    "bellman_reciprocal_holds": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "bellman_nodes": 65536,
+    "contact_scale_scan": {
+      "M": 16384,
+      "N": 262144,
+      "reciprocal_scales": [
+        16,
+        32,
+        64,
+        128,
+        256
+      ]
+    },
+    "location_refinement": {
+      "reciprocal_scale": 64,
+      "N": 262144,
+      "M": [
+        4096,
+        16384,
+        65536
+      ]
+    },
+    "center_refinement": {
+      "reciprocal_scale": 64,
+      "M": 16384,
+      "N": [
+        16384,
+        65536,
+        262144,
+        1048576
+      ]
+    },
+    "contact_witnesses": "For every scanned scale, verify the lower-sign maximizer at the center with the largest near-contact residual. This diagnoses the fixed model and is not a training or checkpoint selection.",
+    "precision_bits": 128,
+    "reference_value": "Used only to enclose actual error; not used to measure contact or Bellman residuals. Analytic problem structure supplies L_V and hold-bias bound.",
+    "timing": "One sequential CPU process; common Lipschitz verification and network evaluations recorded separately from each estimator."
+  },
+  "records": [
+    {
+      "critic": "MLP",
+      "verified_L_u": {
+        "lower_numerator": 2571082169728,
+        "upper_numerator": 2571082169728,
+        "denominator": 1099511627776,
+        "lower": 2.3383856111904606,
+        "upper": 2.3383856111904606
+      },
+      "common_verification_seconds": 32.0712671999936,
+      "true_error_enclosure": {
+        "lower_numerator": 74302425371,
+        "upper_numerator": 74368010564,
+        "denominator": 1099511627776,
+        "lower": 0.0675776622038029,
+        "upper": 0.06763731158935116
+      },
+      "bellman": [
+        {
+          "reciprocal_hold": 16,
+          "grid_nodes": 65536,
+          "sample_residual_lower": 0.025921568193552957,
+          "sample_residual_upper": 0.02592156819628144,
+          "residual_coverage_correction": {
+            "lower_numerator": 80191025,
+            "upper_numerator": 80191026,
+            "denominator": 1099511627776,
+            "lower": 7.293331236724043e-05,
+            "upper": 7.293331327673513e-05
+          },
+          "continuous_residual_upper": {
+            "lower_numerator": 28581256667,
+            "upper_numerator": 28581256668,
+            "denominator": 1099511627776,
+            "lower": 0.025994501508648682,
+            "upper": 0.025994501509558177
+          },
+          "hold_bias_upper": {
+            "lower_numerator": 3901643368,
+            "upper_numerator": 3901643368,
+            "denominator": 1099511627776,
+            "lower": 0.0035485239714034833,
+            "upper": 0.0035485239714034833
+          },
+          "hold_correction": {
+            "lower_numerator": 64397435308,
+            "upper_numerator": 64397435309,
+            "denominator": 1099511627776,
+            "lower": 0.0585691262203909,
+            "upper": 0.058569126221300394
+          },
+          "complete_bound": {
+            "lower_numerator": 536137021350,
+            "upper_numerator": 536137021351,
+            "denominator": 1099511627776,
+            "lower": 0.4876137803421443,
+            "upper": 0.4876137803430538
+          },
+          "estimator_seconds": 1.2577870999812149
+        },
+        {
+          "reciprocal_hold": 32,
+          "grid_nodes": 65536,
+          "sample_residual_lower": 0.017722751314067864,
+          "sample_residual_upper": 0.017722751316796348,
+          "residual_coverage_correction": {
+            "lower_numerator": 79340610,
+            "upper_numerator": 79340611,
+            "denominator": 1099511627776,
+            "lower": 7.215986443043221e-05,
+            "upper": 7.215986533992691e-05
+          },
+          "continuous_residual_upper": {
+            "lower_numerator": 19565711759,
+            "upper_numerator": 19565711760,
+            "denominator": 1099511627776,
+            "lower": 0.01779491118122678,
+            "upper": 0.017794911182136275
+          },
+          "hold_bias_upper": {
+            "lower_numerator": 997519838,
+            "upper_numerator": 997519838,
+            "denominator": 1099511627776,
+            "lower": 0.0009072390075743897,
+            "upper": 0.0009072390075743897
+          },
+          "hold_correction": {
+            "lower_numerator": 32421992400,
+            "upper_numerator": 32421992401,
+            "denominator": 1099511627776,
+            "lower": 0.029487630308722146,
+            "upper": 0.02948763030963164
+          },
+          "complete_bound": {
+            "lower_numerator": 668358576145,
+            "upper_numerator": 668358576146,
+            "denominator": 1099511627776,
+            "lower": 0.6078685838883757,
+            "upper": 0.6078685838892852
+          },
+          "estimator_seconds": 1.2371884000021964
+        },
+        {
+          "reciprocal_hold": 64,
+          "grid_nodes": 65536,
+          "sample_residual_lower": 0.015757602445773955,
+          "sample_residual_upper": 0.01575760244850244,
+          "residual_coverage_correction": {
+            "lower_numerator": 78905333,
+            "upper_numerator": 78905334,
+            "denominator": 1099511627776,
+            "lower": 7.176398230512859e-05,
+            "upper": 7.17639832146233e-05
+          },
+          "continuous_residual_upper": {
+            "lower_numerator": 17404572451,
+            "upper_numerator": 17404572452,
+            "denominator": 1099511627776,
+            "lower": 0.015829366430807568,
+            "upper": 0.015829366431717062
+          },
+          "hold_bias_upper": {
+            "lower_numerator": 253181371,
+            "upper_numerator": 253181371,
+            "denominator": 1099511627776,
+            "lower": 0.0002302671155121061,
+            "upper": 0.0002302671155121061
+          },
+          "hold_correction": {
+            "lower_numerator": 16330528091,
+            "upper_numerator": 16330528092,
+            "denominator": 1099511627776,
+            "lower": 0.014852528775918472,
+            "upper": 0.014852528776827967
+          },
+          "complete_bound": {
+            "lower_numerator": 1138948113311,
+            "upper_numerator": 1138948113312,
+            "denominator": 1099511627776,
+            "lower": 1.0358672746506272,
+            "upper": 1.0358672746515367
+          },
+          "estimator_seconds": 1.234028099977877
+        },
+        {
+          "reciprocal_hold": 128,
+          "grid_nodes": 65536,
+          "sample_residual_lower": 0.010042794825494639,
+          "sample_residual_upper": 0.010042794828223123,
+          "residual_coverage_correction": {
+            "lower_numerator": 78685130,
+            "upper_numerator": 78685131,
+            "denominator": 1099511627776,
+            "lower": 7.156370884331409e-05,
+            "upper": 7.156370975280879e-05
+          },
+          "continuous_residual_upper": {
+            "lower_numerator": 11120854819,
+            "upper_numerator": 11120854820,
+            "denominator": 1099511627776,
+            "lower": 0.010114358537066437,
+            "upper": 0.010114358537975932
+          },
+          "hold_bias_upper": {
+            "lower_numerator": 64268240,
+            "upper_numerator": 64268240,
+            "denominator": 1099511627776,
+            "lower": 5.845162377227098e-05,
+            "upper": 5.845162377227098e-05
+          },
+          "hold_correction": {
+            "lower_numerator": 8258510681,
+            "upper_numerator": 8258510682,
+            "denominator": 1099511627776,
+            "lower": 0.0075110717089046375,
+            "upper": 0.007511071709814132
+          },
+          "complete_bound": {
+            "lower_numerator": 1437295595141,
+            "upper_numerator": 1437295595142,
+            "denominator": 1099511627776,
+            "lower": 1.3072127286623072,
+            "upper": 1.3072127286632167
+          },
+          "estimator_seconds": 1.2229202999733388
+        }
+      ],
+      "contacts": [
+        {
+          "reciprocal_scale": 16,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 790828565362,
+            "upper_numerator": 790828565362,
+            "denominator": 1099511627776,
+            "lower": 0.7192543902074249,
+            "upper": 0.7192543902074249
+          },
+          "location_correction": {
+            "lower_numerator": 1501667067,
+            "upper_numerator": 1501667068,
+            "denominator": 1099511627776,
+            "lower": 0.0013657582412633928,
+            "upper": 0.0013657582421728875
+          },
+          "comparison_correction": {
+            "lower_numerator": 871800802267,
+            "upper_numerator": 871800802268,
+            "denominator": 1099511627776,
+            "lower": 0.7928982106632247,
+            "upper": 0.7928982106641342
+          },
+          "center_correction": {
+            "lower_numerator": 61330157854,
+            "upper_numerator": 61330157855,
+            "denominator": 1099511627776,
+            "lower": 0.05577945362711034,
+            "upper": 0.05577945362801984
+          },
+          "complete_bound": {
+            "lower_numerator": 1725461192551,
+            "upper_numerator": 1725461192552,
+            "denominator": 1099511627776,
+            "lower": 1.5692978127399329,
+            "upper": 1.5692978127408423
+          },
+          "sign_residuals": {
+            "-1": 0.6416002097048477,
+            "1": 0.7192543902074249
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -8619,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -43709,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 80.70029330003308
+        },
+        {
+          "reciprocal_scale": 32,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 980468982185,
+            "upper_numerator": 980468982185,
+            "denominator": 1099511627776,
+            "lower": 0.8917313445499531,
+            "upper": 0.8917313445499531
+          },
+          "location_correction": {
+            "lower_numerator": 2575408891,
+            "upper_numerator": 2575408892,
+            "denominator": 1099511627776,
+            "lower": 0.002342320741263393,
+            "upper": 0.0023423207421728875
+          },
+          "comparison_correction": {
+            "lower_numerator": 435900401133,
+            "upper_numerator": 435900401134,
+            "denominator": 1099511627776,
+            "lower": 0.3964491053311576,
+            "upper": 0.3964491053320671
+          },
+          "center_correction": {
+            "lower_numerator": 80898631304,
+            "upper_numerator": 80898631305,
+            "denominator": 1099511627776,
+            "lower": 0.07357687655166956,
+            "upper": 0.07357687655257905
+          },
+          "complete_bound": {
+            "lower_numerator": 1499843423514,
+            "upper_numerator": 1499843423515,
+            "denominator": 1099511627776,
+            "lower": 1.3640996471749531,
+            "upper": 1.3640996471758626
+          },
+          "sign_residuals": {
+            "-1": 0.710151684167613,
+            "1": 0.8917313445499531
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -17279,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -28453,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 39.719968599965796
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1162292956999,
+            "upper_numerator": 1162292956999,
+            "denominator": 1099511627776,
+            "lower": 1.0570992862985804,
+            "upper": 1.0570992862985804
+          },
+          "location_correction": {
+            "lower_numerator": 4722892539,
+            "upper_numerator": 4722892540,
+            "denominator": 1099511627776,
+            "lower": 0.004295445741263393,
+            "upper": 0.0042954457421728875
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 110047099077,
+            "upper_numerator": 110047099078,
+            "denominator": 1099511627776,
+            "lower": 0.100087253556012,
+            "upper": 0.1000872535569215
+          },
+          "complete_bound": {
+            "lower_numerator": 1495013149182,
+            "upper_numerator": 1495013149183,
+            "denominator": 1099511627776,
+            "lower": 1.3597065382618894,
+            "upper": 1.3597065382627989
+          },
+          "sign_residuals": {
+            "-1": 1.0570992862985804,
+            "1": 0.9917636970985768
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": 2441,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -18991,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 19.28296100004809
+        },
+        {
+          "reciprocal_scale": 128,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1746587679509,
+            "upper_numerator": 1746587679509,
+            "denominator": 1099511627776,
+            "lower": 1.5885122406953087,
+            "upper": 1.5885122406953087
+          },
+          "location_correction": {
+            "lower_numerator": 9017859835,
+            "upper_numerator": 9017859836,
+            "denominator": 1099511627776,
+            "lower": 0.008201695741263393,
+            "upper": 0.008201695742172888
+          },
+          "comparison_correction": {
+            "lower_numerator": 108975100283,
+            "upper_numerator": 108975100284,
+            "denominator": 1099511627776,
+            "lower": 0.09911227633256203,
+            "upper": 0.09911227633347153
+          },
+          "center_correction": {
+            "lower_numerator": 152450584427,
+            "upper_numerator": 152450584428,
+            "denominator": 1099511627776,
+            "lower": 0.13865299881854298,
+            "upper": 0.13865299881945248
+          },
+          "complete_bound": {
+            "lower_numerator": 2017031224055,
+            "upper_numerator": 2017031224056,
+            "denominator": 1099511627776,
+            "lower": 1.8344792115885866,
+            "upper": 1.8344792115894961
+          },
+          "sign_residuals": {
+            "-1": 1.5885122406953087,
+            "1": 1.1316674894123935
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": 1119,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -14199,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 2.6198694999911822
+        },
+        {
+          "reciprocal_scale": 256,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1753577701281,
+            "upper_numerator": 1753577701281,
+            "denominator": 1099511627776,
+            "lower": 1.5948696284622201,
+            "upper": 1.5948696284622201
+          },
+          "location_correction": {
+            "lower_numerator": 17607794427,
+            "upper_numerator": 17607794428,
+            "denominator": 1099511627776,
+            "lower": 0.016014195741263393,
+            "upper": 0.016014195742172888
+          },
+          "comparison_correction": {
+            "lower_numerator": 54487550141,
+            "upper_numerator": 54487550142,
+            "denominator": 1099511627776,
+            "lower": 0.04955613816582627,
+            "upper": 0.049556138166735764
+          },
+          "center_correction": {
+            "lower_numerator": 213313820450,
+            "upper_numerator": 213313820451,
+            "denominator": 1099511627776,
+            "lower": 0.1940077895142167,
+            "upper": 0.1940077895151262
+          },
+          "complete_bound": {
+            "lower_numerator": 2038986866300,
+            "upper_numerator": 2038986866301,
+            "denominator": 1099511627776,
+            "lower": 1.854447751884436,
+            "upper": 1.8544477518853455
+          },
+          "sign_residuals": {
+            "-1": 1.5948696284622201,
+            "1": 1.3301246298296974
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": 225,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -11735,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 1.3619046999956481
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 4096,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1738369109830,
+            "upper_numerator": 1738369109830,
+            "denominator": 1099511627776,
+            "lower": 1.5810374951161066,
+            "upper": 1.5810374951161066
+          },
+          "location_correction": {
+            "lower_numerator": 18891570159,
+            "upper_numerator": 18891570160,
+            "denominator": 1099511627776,
+            "lower": 0.017181782967782055,
+            "upper": 0.01718178296869155
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 110047099077,
+            "upper_numerator": 110047099078,
+            "denominator": 1099511627776,
+            "lower": 0.100087253556012,
+            "upper": 0.1000872535569215
+          },
+          "complete_bound": {
+            "lower_numerator": 2085257979633,
+            "upper_numerator": 2085257979634,
+            "denominator": 1099511627776,
+            "lower": 1.8965310843059342,
+            "upper": 1.8965310843068437
+          },
+          "sign_residuals": {
+            "-1": 1.5810374951161066,
+            "1": 1.320382705328484
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": 2303,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -19627,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 1.4056966000352986
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 65536,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 909373539369,
+            "upper_numerator": 909373539369,
+            "denominator": 1099511627776,
+            "lower": 0.8270704159886009,
+            "upper": 0.8270704159886009
+          },
+          "location_correction": {
+            "lower_numerator": 1180723134,
+            "upper_numerator": 1180723135,
+            "denominator": 1099511627776,
+            "lower": 0.0010738614346337272,
+            "upper": 0.0010738614355432219
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 110047099077,
+            "upper_numerator": 110047099078,
+            "denominator": 1099511627776,
+            "lower": 0.100087253556012,
+            "upper": 0.1000872535569215
+          },
+          "complete_bound": {
+            "lower_numerator": 1238551562147,
+            "upper_numerator": 1238551562148,
+            "denominator": 1099511627776,
+            "lower": 1.1264560836452802,
+            "upper": 1.1264560836461897
+          },
+          "sign_residuals": {
+            "-1": 0.6964699573672988,
+            "1": 0.8270704159886009
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": 2439,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -18615,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 79.56270110001788
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 16384,
+          "centers": 16384,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1155449558505,
+            "upper_numerator": 1155449558505,
+            "denominator": 1099511627776,
+            "lower": 1.0508752516261666,
+            "upper": 1.0508752516261666
+          },
+          "location_correction": {
+            "lower_numerator": 4722892539,
+            "upper_numerator": 4722892540,
+            "denominator": 1099511627776,
+            "lower": 0.004295445741263393,
+            "upper": 0.0042954457421728875
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 440714437940,
+            "upper_numerator": 440714437941,
+            "denominator": 1099511627776,
+            "lower": 0.400827446301264,
+            "upper": 0.4008274463021735
+          },
+          "complete_bound": {
+            "lower_numerator": 1818837089552,
+            "upper_numerator": 1818837089553,
+            "denominator": 1099511627776,
+            "lower": 1.654222696335637,
+            "upper": 1.6542226963365465
+          },
+          "sign_residuals": {
+            "-1": 1.0508752516261666,
+            "1": 0.9852711290386651
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": 153,
+              "denominator": 16384
+            },
+            "1": {
+              "numerator": -1153,
+              "denominator": 16384
+            }
+          },
+          "estimator_seconds": 1.156338200031314
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 16384,
+          "centers": 65536,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1154375816681,
+            "upper_numerator": 1154375816681,
+            "denominator": 1099511627776,
+            "lower": 1.0498986891261666,
+            "upper": 1.0498986891261666
+          },
+          "location_correction": {
+            "lower_numerator": 4722892539,
+            "upper_numerator": 4722892540,
+            "denominator": 1099511627776,
+            "lower": 0.004295445741263393,
+            "upper": 0.0042954457421728875
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 220176159342,
+            "upper_numerator": 220176159343,
+            "denominator": 1099511627776,
+            "lower": 0.20024905037826102,
+            "upper": 0.2002490503791705
+          },
+          "complete_bound": {
+            "lower_numerator": 1597225069130,
+            "upper_numerator": 1597225069131,
+            "denominator": 1099511627776,
+            "lower": 1.452667737912634,
+            "upper": 1.4526677379135435
+          },
+          "sign_residuals": {
+            "-1": 1.0498986891261666,
+            "1": 0.9913025966998248
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": 611,
+              "denominator": 65536
+            },
+            "1": {
+              "numerator": -4715,
+              "denominator": 65536
+            }
+          },
+          "estimator_seconds": 4.714480999973603
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 16384,
+          "centers": 1048576,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1162628501319,
+            "upper_numerator": 1162628501319,
+            "denominator": 1099511627776,
+            "lower": 1.0574044620798304,
+            "upper": 1.0574044620798304
+          },
+          "location_correction": {
+            "lower_numerator": 4722892539,
+            "upper_numerator": 4722892540,
+            "denominator": 1099511627776,
+            "lower": 0.004295445741263393,
+            "upper": 0.0042954457421728875
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 55013839347,
+            "upper_numerator": 55013839348,
+            "denominator": 1099511627776,
+            "lower": 0.05003479541028355,
+            "upper": 0.050034795411193045
+          },
+          "complete_bound": {
+            "lower_numerator": 1440315433773,
+            "upper_numerator": 1440315433774,
+            "denominator": 1099511627776,
+            "lower": 1.3099592558983204,
+            "upper": 1.30995925589923
+          },
+          "sign_residuals": {
+            "-1": 1.0574044620798304,
+            "1": 0.9918247322548268
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": 9769,
+              "denominator": 1048576
+            },
+            "1": {
+              "numerator": -75965,
+              "denominator": 1048576
+            }
+          },
+          "estimator_seconds": 75.0351396999904
+        }
+      ],
+      "witnesses": [
+        {
+          "center": {
+            "lower_numerator": -36150706176,
+            "upper_numerator": -36150706176,
+            "denominator": 1099511627776,
+            "lower": -0.032878875732421875,
+            "upper": -0.032878875732421875
+          },
+          "sign": -1,
+          "reciprocal_scale": 16,
+          "residual_lower": 0.4672960335628886,
+          "residual_upper": 0.4673248579902065,
+          "lower_numerator": 513797422516,
+          "upper_numerator": 513829115309,
+          "denominator": 1099511627776,
+          "surviving_cells": 35,
+          "cell_evaluations": 988,
+          "maximum_cell_width": 3.4844660925723026e-08,
+          "seconds": 0.561544900003355,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        },
+        {
+          "center": {
+            "lower_numerator": -72473378816,
+            "upper_numerator": -72473378816,
+            "denominator": 1099511627776,
+            "lower": -0.06591415405273438,
+            "upper": -0.06591415405273438
+          },
+          "sign": -1,
+          "reciprocal_scale": 32,
+          "residual_lower": 0.4705676736566602,
+          "residual_upper": 0.4706034178589107,
+          "lower_numerator": 517394628841,
+          "upper_numerator": 517433930007,
+          "denominator": 1099511627776,
+          "surviving_cells": 24,
+          "cell_evaluations": 698,
+          "maximum_cell_width": 3.4844660925723026e-08,
+          "seconds": 0.39224040001863614,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        },
+        {
+          "center": {
+            "lower_numerator": 10238296064,
+            "upper_numerator": 10238296064,
+            "denominator": 1099511627776,
+            "lower": 0.009311676025390625,
+            "upper": 0.009311676025390625
+          },
+          "sign": -1,
+          "reciprocal_scale": 64,
+          "residual_lower": 0.4031416222660482,
+          "residual_upper": 0.40321141378262837,
+          "lower_numerator": 443258901322,
+          "upper_numerator": 443335637906,
+          "denominator": 1099511627776,
+          "surviving_cells": 27,
+          "cell_evaluations": 914,
+          "maximum_cell_width": 3.4844660925723026e-08,
+          "seconds": 0.4904077999526635,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        },
+        {
+          "center": {
+            "lower_numerator": 4693426176,
+            "upper_numerator": 4693426176,
+            "denominator": 1099511627776,
+            "lower": 0.004268646240234375,
+            "upper": 0.004268646240234375
+          },
+          "sign": -1,
+          "reciprocal_scale": 128,
+          "residual_lower": 0.8491436004014759,
+          "residual_upper": 0.8492449316654529,
+          "lower_numerator": 933643262293,
+          "upper_numerator": 933754677196,
+          "denominator": 1099511627776,
+          "surviving_cells": 21,
+          "cell_evaluations": 518,
+          "maximum_cell_width": 3.4844660925723026e-08,
+          "seconds": 0.28776699997251853,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        },
+        {
+          "center": {
+            "lower_numerator": 943718400,
+            "upper_numerator": 943718400,
+            "denominator": 1099511627776,
+            "lower": 0.000858306884765625,
+            "upper": 0.000858306884765625
+          },
+          "sign": -1,
+          "reciprocal_scale": 256,
+          "residual_lower": 0.7935064829780458,
+          "residual_upper": 0.7936120492940972,
+          "lower_numerator": 872469604750,
+          "upper_numerator": 872585676142,
+          "denominator": 1099511627776,
+          "surviving_cells": 11,
+          "cell_evaluations": 338,
+          "maximum_cell_width": 3.4844660925723026e-08,
+          "seconds": 0.1842400999739766,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        }
+      ]
+    },
+    {
+      "critic": "Min2",
+      "verified_L_u": {
+        "lower_numerator": 2535582367424,
+        "upper_numerator": 2535582367424,
+        "denominator": 1099511627776,
+        "lower": 2.3060987290809862,
+        "upper": 2.3060987290809862
+      },
+      "common_verification_seconds": 61.91504360002,
+      "true_error_enclosure": {
+        "lower_numerator": 60773903674,
+        "upper_numerator": 60838947183,
+        "denominator": 1099511627776,
+        "lower": 0.0552735433975613,
+        "upper": 0.05533270012438152
+      },
+      "bellman": [
+        {
+          "reciprocal_hold": 16,
+          "grid_nodes": 65536,
+          "sample_residual_lower": 0.030594338734772464,
+          "sample_residual_upper": 0.030594338737500948,
+          "residual_coverage_correction": {
+            "lower_numerator": 79140476,
+            "upper_numerator": 79140477,
+            "denominator": 1099511627776,
+            "lower": 7.197784361778758e-05,
+            "upper": 7.197784452728229e-05
+          },
+          "continuous_residual_upper": {
+            "lower_numerator": 33717971662,
+            "upper_numerator": 33717971663,
+            "denominator": 1099511627776,
+            "lower": 0.030666316581118735,
+            "upper": 0.03066631658202823
+          },
+          "hold_bias_upper": {
+            "lower_numerator": 3901643368,
+            "upper_numerator": 3901643368,
+            "denominator": 1099511627776,
+            "lower": 0.0035485239714034833,
+            "upper": 0.0035485239714034833
+          },
+          "hold_correction": {
+            "lower_numerator": 64397435308,
+            "upper_numerator": 64397435309,
+            "denominator": 1099511627776,
+            "lower": 0.0585691262203909,
+            "upper": 0.058569126221300394
+          },
+          "complete_bound": {
+            "lower_numerator": 620919570749,
+            "upper_numerator": 620919570750,
+            "denominator": 1099511627776,
+            "lower": 0.5647230598233364,
+            "upper": 0.5647230598242459
+          },
+          "estimator_seconds": 1.258163099992089
+        },
+        {
+          "reciprocal_hold": 32,
+          "grid_nodes": 65536,
+          "sample_residual_lower": 0.01685468294090242,
+          "sample_residual_upper": 0.016854682943630905,
+          "residual_coverage_correction": {
+            "lower_numerator": 78273908,
+            "upper_numerator": 78273909,
+            "denominator": 1099511627776,
+            "lower": 7.118970461306162e-05,
+            "upper": 7.118970552255632e-05
+          },
+          "continuous_residual_upper": {
+            "lower_numerator": 18610193787,
+            "upper_numerator": 18610193788,
+            "denominator": 1099511627776,
+            "lower": 0.016925872648243967,
+            "upper": 0.01692587264915346
+          },
+          "hold_bias_upper": {
+            "lower_numerator": 997519838,
+            "upper_numerator": 997519838,
+            "denominator": 1099511627776,
+            "lower": 0.0009072390075743897,
+            "upper": 0.0009072390075743897
+          },
+          "hold_correction": {
+            "lower_numerator": 32421992400,
+            "upper_numerator": 32421992401,
+            "denominator": 1099511627776,
+            "lower": 0.029487630308722146,
+            "upper": 0.02948763030963164
+          },
+          "complete_bound": {
+            "lower_numerator": 637301753763,
+            "upper_numerator": 637301753764,
+            "denominator": 1099511627776,
+            "lower": 0.5796225684780438,
+            "upper": 0.5796225684789533
+          },
+          "estimator_seconds": 1.249464499996975
+        },
+        {
+          "reciprocal_hold": 64,
+          "grid_nodes": 65536,
+          "sample_residual_lower": 0.014479969415333471,
+          "sample_residual_upper": 0.014479969418061955,
+          "residual_coverage_correction": {
+            "lower_numerator": 77830363,
+            "upper_numerator": 77830364,
+            "denominator": 1099511627776,
+            "lower": 7.078630278556375e-05,
+            "upper": 7.078630369505845e-05
+          },
+          "continuous_residual_upper": {
+            "lower_numerator": 15998725108,
+            "upper_numerator": 15998725109,
+            "denominator": 1099511627776,
+            "lower": 0.014550755720847519,
+            "upper": 0.014550755721757014
+          },
+          "hold_bias_upper": {
+            "lower_numerator": 253181371,
+            "upper_numerator": 253181371,
+            "denominator": 1099511627776,
+            "lower": 0.0002302671155121061,
+            "upper": 0.0002302671155121061
+          },
+          "hold_correction": {
+            "lower_numerator": 16330528091,
+            "upper_numerator": 16330528092,
+            "denominator": 1099511627776,
+            "lower": 0.014852528775918472,
+            "upper": 0.014852528776827967
+          },
+          "complete_bound": {
+            "lower_numerator": 1048269129167,
+            "upper_numerator": 1048269129168,
+            "denominator": 1099511627776,
+            "lower": 0.9533952190095079,
+            "upper": 0.9533952190104173
+          },
+          "estimator_seconds": 1.2244538000086322
+        },
+        {
+          "reciprocal_hold": 128,
+          "grid_nodes": 65536,
+          "sample_residual_lower": 0.009698817119897285,
+          "sample_residual_upper": 0.009698817122625769,
+          "residual_coverage_correction": {
+            "lower_numerator": 77605978,
+            "upper_numerator": 77605979,
+            "denominator": 1099511627776,
+            "lower": 7.058222581690643e-05,
+            "upper": 7.058222672640113e-05
+          },
+          "continuous_residual_upper": {
+            "lower_numerator": 10741568180,
+            "upper_numerator": 10741568181,
+            "denominator": 1099511627776,
+            "lower": 0.009769399348442676,
+            "upper": 0.00976939934935217
+          },
+          "hold_bias_upper": {
+            "lower_numerator": 64268240,
+            "upper_numerator": 64268240,
+            "denominator": 1099511627776,
+            "lower": 5.845162377227098e-05,
+            "upper": 5.845162377227098e-05
+          },
+          "hold_correction": {
+            "lower_numerator": 8258510681,
+            "upper_numerator": 8258510682,
+            "denominator": 1099511627776,
+            "lower": 0.0075110717089046375,
+            "upper": 0.007511071709814132
+          },
+          "complete_bound": {
+            "lower_numerator": 1388557015025,
+            "upper_numerator": 1388557015026,
+            "denominator": 1099511627776,
+            "lower": 1.2628852482748698,
+            "upper": 1.2628852482757793
+          },
+          "estimator_seconds": 1.2200808000052348
+        }
+      ],
+      "contacts": [
+        {
+          "reciprocal_scale": 16,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 849325985302,
+            "upper_numerator": 849325985302,
+            "denominator": 1099511627776,
+            "lower": 0.7724574837102409,
+            "upper": 0.7724574837102409
+          },
+          "location_correction": {
+            "lower_numerator": 1499500331,
+            "upper_numerator": 1499500332,
+            "denominator": 1099511627776,
+            "lower": 0.0013637876063512522,
+            "upper": 0.0013637876072607469
+          },
+          "comparison_correction": {
+            "lower_numerator": 871800802267,
+            "upper_numerator": 871800802268,
+            "denominator": 1099511627776,
+            "lower": 0.7928982106632247,
+            "upper": 0.7928982106641342
+          },
+          "center_correction": {
+            "lower_numerator": 61330157854,
+            "upper_numerator": 61330157855,
+            "denominator": 1099511627776,
+            "lower": 0.05577945362711034,
+            "upper": 0.05577945362801984
+          },
+          "complete_bound": {
+            "lower_numerator": 1783956445755,
+            "upper_numerator": 1783956445756,
+            "denominator": 1099511627776,
+            "lower": 1.6224989356078368,
+            "upper": 1.6224989356087463
+          },
+          "sign_residuals": {
+            "-1": 0.6804991132721625,
+            "1": 0.7724574837102409
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -97169,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -45699,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 78.39177170000039
+        },
+        {
+          "reciprocal_scale": 32,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 959403646912,
+            "upper_numerator": 959403646912,
+            "denominator": 1099511627776,
+            "lower": 0.8725725337280892,
+            "upper": 0.8725725337280892
+          },
+          "location_correction": {
+            "lower_numerator": 2573242155,
+            "upper_numerator": 2573242156,
+            "denominator": 1099511627776,
+            "lower": 0.002340350106351252,
+            "upper": 0.002340350107260747
+          },
+          "comparison_correction": {
+            "lower_numerator": 435900401133,
+            "upper_numerator": 435900401134,
+            "denominator": 1099511627776,
+            "lower": 0.3964491053311576,
+            "upper": 0.3964491053320671
+          },
+          "center_correction": {
+            "lower_numerator": 80898631304,
+            "upper_numerator": 80898631305,
+            "denominator": 1099511627776,
+            "lower": 0.07357687655166956,
+            "upper": 0.07357687655257905
+          },
+          "complete_bound": {
+            "lower_numerator": 1478775921505,
+            "upper_numerator": 1478775921506,
+            "denominator": 1099511627776,
+            "lower": 1.3449388657181771,
+            "upper": 1.3449388657190866
+          },
+          "sign_residuals": {
+            "-1": 0.7460693460143375,
+            "1": 0.8725725337280892
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -103255,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -28651,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 38.42929220001679
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1068372807947,
+            "upper_numerator": 1068372807947,
+            "denominator": 1099511627776,
+            "lower": 0.9716794083460627,
+            "upper": 0.9716794083460627
+          },
+          "location_correction": {
+            "lower_numerator": 4720725803,
+            "upper_numerator": 4720725804,
+            "denominator": 1099511627776,
+            "lower": 0.004293475106351252,
+            "upper": 0.004293475107260747
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 110047099077,
+            "upper_numerator": 110047099078,
+            "denominator": 1099511627776,
+            "lower": 0.100087253556012,
+            "upper": 0.1000872535569215
+          },
+          "complete_bound": {
+            "lower_numerator": 1401090833394,
+            "upper_numerator": 1401090833395,
+            "denominator": 1099511627776,
+            "lower": 1.2742846896744595,
+            "upper": 1.274284689675369
+          },
+          "sign_residuals": {
+            "-1": 0.8411692740264698,
+            "1": 0.9716794083460627
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -105875,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -19181,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 19.02060279995203
+        },
+        {
+          "reciprocal_scale": 128,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1743530080231,
+            "upper_numerator": 1743530080231,
+            "denominator": 1099511627776,
+            "lower": 1.585731370351823,
+            "upper": 1.585731370351823
+          },
+          "location_correction": {
+            "lower_numerator": 9015693099,
+            "upper_numerator": 9015693100,
+            "denominator": 1099511627776,
+            "lower": 0.008199725106351252,
+            "upper": 0.008199725107260747
+          },
+          "comparison_correction": {
+            "lower_numerator": 108975100283,
+            "upper_numerator": 108975100284,
+            "denominator": 1099511627776,
+            "lower": 0.09911227633256203,
+            "upper": 0.09911227633347153
+          },
+          "center_correction": {
+            "lower_numerator": 152450584427,
+            "upper_numerator": 152450584428,
+            "denominator": 1099511627776,
+            "lower": 0.13865299881854298,
+            "upper": 0.13865299881945248
+          },
+          "complete_bound": {
+            "lower_numerator": 2013971458041,
+            "upper_numerator": 2013971458042,
+            "denominator": 1099511627776,
+            "lower": 1.8316963706101888,
+            "upper": 1.8316963706110982
+          },
+          "sign_residuals": {
+            "-1": 1.585731370351823,
+            "1": 1.1102764781044243
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": 415,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -14387,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 2.5858929000096396
+        },
+        {
+          "reciprocal_scale": 256,
+          "grid_nodes": 16384,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1746315127039,
+            "upper_numerator": 1746315127039,
+            "denominator": 1099511627776,
+            "lower": 1.5882643556678886,
+            "upper": 1.5882643556678886
+          },
+          "location_correction": {
+            "lower_numerator": 17605627691,
+            "upper_numerator": 17605627692,
+            "denominator": 1099511627776,
+            "lower": 0.016012225106351252,
+            "upper": 0.016012225107260747
+          },
+          "comparison_correction": {
+            "lower_numerator": 54487550141,
+            "upper_numerator": 54487550142,
+            "denominator": 1099511627776,
+            "lower": 0.04955613816582627,
+            "upper": 0.049556138166735764
+          },
+          "center_correction": {
+            "lower_numerator": 213313820450,
+            "upper_numerator": 213313820451,
+            "denominator": 1099511627776,
+            "lower": 0.1940077895142167,
+            "upper": 0.1940077895151262
+          },
+          "complete_bound": {
+            "lower_numerator": 2031722125322,
+            "upper_numerator": 2031722125323,
+            "denominator": 1099511627776,
+            "lower": 1.8478405084551923,
+            "upper": 1.8478405084561018
+          },
+          "sign_residuals": {
+            "-1": 1.5882643556678886,
+            "1": 1.3069259071116903
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -1,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -11891,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 1.343729300017003
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 4096,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1427842648945,
+            "upper_numerator": 1427842648945,
+            "denominator": 1099511627776,
+            "lower": 1.2986153241809006,
+            "upper": 1.2986153241809006
+          },
+          "location_correction": {
+            "lower_numerator": 18882903215,
+            "upper_numerator": 18882903216,
+            "denominator": 1099511627776,
+            "lower": 0.017173900428133493,
+            "upper": 0.017173900429042988
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 110047099077,
+            "upper_numerator": 110047099078,
+            "denominator": 1099511627776,
+            "lower": 0.100087253556012,
+            "upper": 0.1000872535569215
+          },
+          "complete_bound": {
+            "lower_numerator": 1774722851804,
+            "upper_numerator": 1774722851805,
+            "denominator": 1099511627776,
+            "lower": 1.6141010308310797,
+            "upper": 1.6141010308319892
+          },
+          "sign_residuals": {
+            "-1": 1.180006478561154,
+            "1": 1.2986153241809006
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -106999,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -19875,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 1.356370199995581
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 65536,
+          "centers": 262144,
+          "near_contact_residual_upper": {
+            "lower_numerator": 888337756841,
+            "upper_numerator": 888337756841,
+            "denominator": 1099511627776,
+            "lower": 0.8079384832317373,
+            "upper": 0.8079384832317373
+          },
+          "location_correction": {
+            "lower_numerator": 1180181450,
+            "upper_numerator": 1180181451,
+            "denominator": 1099511627776,
+            "lower": 0.001073368775905692,
+            "upper": 0.0010733687768151867
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 110047099077,
+            "upper_numerator": 110047099078,
+            "denominator": 1099511627776,
+            "lower": 0.100087253556012,
+            "upper": 0.1000872535569215
+          },
+          "complete_bound": {
+            "lower_numerator": 1217515237935,
+            "upper_numerator": 1217515237936,
+            "denominator": 1099511627776,
+            "lower": 1.1073236582296886,
+            "upper": 1.107323658230598
+          },
+          "sign_residuals": {
+            "-1": 0.6736355508537599,
+            "1": 0.8079384832317373
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -105263,
+              "denominator": 262144
+            },
+            "1": {
+              "numerator": -18841,
+              "denominator": 262144
+            }
+          },
+          "estimator_seconds": 78.22028520004824
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 16384,
+          "centers": 16384,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1061557886677,
+            "upper_numerator": 1061557886677,
+            "denominator": 1099511627776,
+            "lower": 0.9654812735579981,
+            "upper": 0.9654812735579981
+          },
+          "location_correction": {
+            "lower_numerator": 4720725803,
+            "upper_numerator": 4720725804,
+            "denominator": 1099511627776,
+            "lower": 0.004293475106351252,
+            "upper": 0.004293475107260747
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 440714437940,
+            "upper_numerator": 440714437941,
+            "denominator": 1099511627776,
+            "lower": 0.400827446301264,
+            "upper": 0.4008274463021735
+          },
+          "complete_bound": {
+            "lower_numerator": 1724943250988,
+            "upper_numerator": 1724943250989,
+            "denominator": 1099511627776,
+            "lower": 1.5688267476325564,
+            "upper": 1.5688267476334659
+          },
+          "sign_residuals": {
+            "-1": 0.8411584574414519,
+            "1": 0.9654812735579981
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -6611,
+              "denominator": 16384
+            },
+            "1": {
+              "numerator": -1169,
+              "denominator": 16384
+            }
+          },
+          "estimator_seconds": 1.19950740004424
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 16384,
+          "centers": 65536,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1068174306873,
+            "upper_numerator": 1068174306873,
+            "denominator": 1099511627776,
+            "lower": 0.9714988726709635,
+            "upper": 0.9714988726709635
+          },
+          "location_correction": {
+            "lower_numerator": 4720725803,
+            "upper_numerator": 4720725804,
+            "denominator": 1099511627776,
+            "lower": 0.004293475106351252,
+            "upper": 0.004293475107260747
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 220176159342,
+            "upper_numerator": 220176159343,
+            "denominator": 1099511627776,
+            "lower": 0.20024905037826102,
+            "upper": 0.2002490503791705
+          },
+          "complete_bound": {
+            "lower_numerator": 1511021392586,
+            "upper_numerator": 1511021392587,
+            "denominator": 1099511627776,
+            "lower": 1.3742659508225188,
+            "upper": 1.3742659508234283
+          },
+          "sign_residuals": {
+            "-1": 0.8411432392731513,
+            "1": 0.9714988726709635
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -26411,
+              "denominator": 65536
+            },
+            "1": {
+              "numerator": -4787,
+              "denominator": 65536
+            }
+          },
+          "estimator_seconds": 4.6043777000159025
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 16384,
+          "centers": 1048576,
+          "near_contact_residual_upper": {
+            "lower_numerator": 1068498121910,
+            "upper_numerator": 1068498121910,
+            "denominator": 1099511627776,
+            "lower": 0.9717933807314694,
+            "upper": 0.9717933807314694
+          },
+          "location_correction": {
+            "lower_numerator": 4720725803,
+            "upper_numerator": 4720725804,
+            "denominator": 1099511627776,
+            "lower": 0.004293475106351252,
+            "upper": 0.004293475107260747
+          },
+          "comparison_correction": {
+            "lower_numerator": 217950200566,
+            "upper_numerator": 217950200567,
+            "denominator": 1099511627776,
+            "lower": 0.19822455266512407,
+            "upper": 0.19822455266603356
+          },
+          "center_correction": {
+            "lower_numerator": 55013839347,
+            "upper_numerator": 55013839348,
+            "denominator": 1099511627776,
+            "lower": 0.05003479541028355,
+            "upper": 0.050034795411193045
+          },
+          "complete_bound": {
+            "lower_numerator": 1346182887628,
+            "upper_numerator": 1346182887629,
+            "denominator": 1099511627776,
+            "lower": 1.2243462039150472,
+            "upper": 1.2243462039159567
+          },
+          "sign_residuals": {
+            "-1": 0.8412157738011956,
+            "1": 0.9717933807314694
+          },
+          "witness_centers": {
+            "-1": {
+              "numerator": -422973,
+              "denominator": 1048576
+            },
+            "1": {
+              "numerator": -77113,
+              "denominator": 1048576
+            }
+          },
+          "estimator_seconds": 75.0223858000245
+        }
+      ],
+      "witnesses": [
+        {
+          "center": {
+            "lower_numerator": -407556325376,
+            "upper_numerator": -407556325376,
+            "denominator": 1099511627776,
+            "lower": -0.3706703186035156,
+            "upper": -0.3706703186035156
+          },
+          "sign": -1,
+          "reciprocal_scale": 16,
+          "residual_lower": 0.5047228250050466,
+          "residual_upper": 0.5047494768750767,
+          "lower_numerator": 554948614897,
+          "upper_numerator": 554977918938,
+          "denominator": 1099511627776,
+          "surviving_cells": 33,
+          "cell_evaluations": 826,
+          "maximum_cell_width": 3.436354889096299e-08,
+          "seconds": 0.9211897000204772,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        },
+        {
+          "center": {
+            "lower_numerator": -433082859520,
+            "upper_numerator": -433082859520,
+            "denominator": 1099511627776,
+            "lower": -0.3938865661621094,
+            "upper": -0.3938865661621094
+          },
+          "sign": -1,
+          "reciprocal_scale": 32,
+          "residual_lower": 0.5049557265156182,
+          "residual_upper": 0.5049888418752744,
+          "lower_numerator": 555204692816,
+          "upper_numerator": 555241103539,
+          "denominator": 1099511627776,
+          "surviving_cells": 23,
+          "cell_evaluations": 602,
+          "maximum_cell_width": 3.436354889096299e-08,
+          "seconds": 0.6631517999921925,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        },
+        {
+          "center": {
+            "lower_numerator": -444071936000,
+            "upper_numerator": -444071936000,
+            "denominator": 1099511627776,
+            "lower": -0.4038810729980469,
+            "upper": -0.4038810729980469
+          },
+          "sign": -1,
+          "reciprocal_scale": 64,
+          "residual_lower": 0.5058819522973863,
+          "residual_upper": 0.5059222478012089,
+          "lower_numerator": 556223088833,
+          "upper_numerator": 556267394208,
+          "denominator": 1099511627776,
+          "surviving_cells": 15,
+          "cell_evaluations": 448,
+          "maximum_cell_width": 3.436354889096299e-08,
+          "seconds": 0.48658270004671067,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        },
+        {
+          "center": {
+            "lower_numerator": 1740636160,
+            "upper_numerator": 1740636160,
+            "denominator": 1099511627776,
+            "lower": 0.001583099365234375,
+            "upper": 0.001583099365234375
+          },
+          "sign": -1,
+          "reciprocal_scale": 128,
+          "residual_lower": 0.7886608522367169,
+          "residual_upper": 0.7887616822599739,
+          "lower_numerator": 867141777406,
+          "upper_numerator": 867252641189,
+          "denominator": 1099511627776,
+          "surviving_cells": 21,
+          "cell_evaluations": 552,
+          "maximum_cell_width": 3.436354889096299e-08,
+          "seconds": 0.6077866000123322,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        },
+        {
+          "center": {
+            "lower_numerator": -4194304,
+            "upper_numerator": -4194304,
+            "denominator": 1099511627776,
+            "lower": -3.814697265625e-06,
+            "upper": -3.814697265625e-06
+          },
+          "sign": -1,
+          "reciprocal_scale": 256,
+          "residual_lower": 0.983399235550678,
+          "residual_upper": 0.9835128157083091,
+          "lower_numerator": 1081258894234,
+          "upper_numerator": 1081383776938,
+          "denominator": 1099511627776,
+          "surviving_cells": 12,
+          "cell_evaluations": 344,
+          "maximum_cell_width": 3.4363548891830353e-08,
+          "seconds": 0.36875940003665164,
+          "claim": "Enclosure at this center only; lower endpoint also bounds the population residual from below."
+        }
+      ]
+    }
+  ],
+  "complete": true
+}

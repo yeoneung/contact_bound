@@ -1,0 +1,7 @@
+{
+  "checks_run": 4,
+  "successful": true,
+  "independent_network_points": 6,
+  "independent_integrals": 18,
+  "hold_bias_points": 129
+}

@@ -1,0 +1,6 @@
+# Byte-preserving checkouts are required by the recorded SHA-256 checks.
+* -text
+*.pt binary
+*.npz binary
+*.pdf binary
+*.png binary

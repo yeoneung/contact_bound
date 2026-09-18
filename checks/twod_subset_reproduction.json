@@ -1,0 +1,22 @@
+{
+  "successful": true,
+  "backend": "numpy CPU",
+  "settings_recomputed": [
+    {
+      "critic_side": 32,
+      "location_side": 1024,
+      "center_side": 512,
+      "reciprocal_scale": 64,
+      "bound": 1.4621887869943748,
+      "cpu_seconds": 1.7083325000130571
+    },
+    {
+      "critic_side": 64,
+      "location_side": 1024,
+      "center_side": 512,
+      "reciprocal_scale": 64,
+      "bound": 1.1638362117500947,
+      "cpu_seconds": 1.727685099991504
+    }
+  ]
+}

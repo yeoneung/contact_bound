@@ -1,0 +1,25 @@
+{
+  "beta_quarters": 1,
+  "nodes": 65536,
+  "reciprocal_hold": 64,
+  "panels": 8,
+  "cost_mode": "verified_piecewise_midpoint",
+  "flow_cost_seconds": 4.229300200007856,
+  "hold_bias_seconds": 0.013369499996770173,
+  "operator_seconds": 4.242669700004626,
+  "quadrature_radius_upper": 1.1673546396195889e-07,
+  "hold_bias": {
+    "lower_numerator": 146209299,
+    "upper_numerator": 146209299,
+    "denominator": 1099511627776,
+    "lower": 0.0001329765827904339,
+    "upper": 0.0001329765827904339
+  },
+  "hashes": {
+    "code\\experiments\\compare_variable_speed.py": "f0587a4b2fbfd4d7636e6345ef717b72dcde9758affc6f67d1a6c84c0abedeaa",
+    "code\\hjrl\\verified_variable_speed.py": "a4bfe584aa65a127efbadcbc8b79a6fa13d107503402b67ec88dbff623948ecf",
+    "code\\hjrl\\verified_arb.py": "e211131d2d4e8bdb2100d147be6df2b5850beba44a98be8e15af3438ccf9989e",
+    "results\\state_dependent_design.json": "e554f9166a4a828ee000dd0479fabcfbf66e6451318a17dd6263c000b0ac37f6"
+  },
+  "sha256": "3a79ccae2b0634fef1985b7c610d9bc64e222a799b46830686d377ea8e3afd86"
+}

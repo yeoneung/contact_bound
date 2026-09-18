@@ -1,0 +1,8 @@
+{
+  "checks_run": 4,
+  "successful": true,
+  "signed_derivative_points": 4,
+  "analytic_contact_signs": 2,
+  "hold_bias_points": 260,
+  "off_grid_quadrature_points": 4
+}

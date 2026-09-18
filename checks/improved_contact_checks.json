@@ -1,0 +1,8 @@
+{
+  "checks_run": 4,
+  "successful": true,
+  "independent_second_derivatives": 6,
+  "cell_derivative_points": 12,
+  "continuous_contact_candidates": 72,
+  "wrong_kink_settings": 6
+}

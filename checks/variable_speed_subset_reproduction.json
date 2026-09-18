@@ -1,0 +1,28 @@
+{
+  "successful": true,
+  "all_non_timing_fields_match": true,
+  "settings_recomputed": [
+    "0:MLP:contact:16384:64",
+    "0:Min2:contact:16384:64",
+    "1:MLP:contact:16384:64",
+    "1:Min2:contact:16384:64",
+    "2:MLP:contact:16384:64",
+    "2:Min2:contact:16384:64",
+    "0:MLP:bellman:65536:16:0:lipschitz",
+    "0:MLP:bellman:65536:16:0:derivative",
+    "0:Min2:bellman:65536:16:0:lipschitz",
+    "0:Min2:bellman:65536:16:0:derivative",
+    "1:MLP:bellman:65536:16:8:lipschitz",
+    "1:MLP:bellman:65536:16:8:derivative",
+    "1:Min2:bellman:65536:16:8:lipschitz",
+    "1:Min2:bellman:65536:16:8:derivative",
+    "2:MLP:bellman:65536:16:8:lipschitz",
+    "2:MLP:bellman:65536:16:8:derivative",
+    "2:Min2:bellman:65536:16:8:lipschitz",
+    "2:Min2:bellman:65536:16:8:derivative"
+  ],
+  "operator_enclosures_rebuilt": [],
+  "cached_critic_enclosures_used": true,
+  "global_neural_enclosures_rebuilt": false,
+  "entire_parameter_sweep_repeated": false
+}

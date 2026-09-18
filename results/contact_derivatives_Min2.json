@@ -1,0 +1,13 @@
+{
+  "hashes": {
+    "code\\experiments\\refine_contact_stationarity.py": "28b05aaacbf0a9cffef3f9be34b79c16b3cc24da5e3e4382224d16479caaa18f",
+    "code\\hjrl\\verified_stationarity.py": "c3d2fbeb515bab4ae03f33da5aef53f94f718f22542d4fc9eb9c91d015eb3d83",
+    "code\\hjrl\\verified_arb.py": "e211131d2d4e8bdb2100d147be6df2b5850beba44a98be8e15af3438ccf9989e",
+    "results\\verified_neural_models.pt": "b7bf384e38d2eef88a88840f848dc720860c99442dd5cb485927cb8bed7bee24"
+  },
+  "sha256": "04e31191397610c54690e4637372075e8fe1c5bf772e3109f949d7080283fc51",
+  "nodes": 65536,
+  "cell_radius": "1/65536",
+  "seconds": 100.03860470000654,
+  "maximum_derivative_interval_width": 0.0027238825505264685
+}

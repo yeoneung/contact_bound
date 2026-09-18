@@ -1,0 +1,1467 @@
+{
+  "dimension": 2,
+  "precision_bits": 128,
+  "source_hashes": {
+    "code/hjrl/verified_twod.py": "d7183c6e0a824f32ce2e0f2f9d103cd03e544e6eecda7db0ac49c4c52f3faaa4",
+    "code/experiments/verify_twod_contact.py": "659bccb84894c32d594cd7d786649678a110fe457ac6ec09a6b1ea48060fe3a2",
+    "code/hjrl/verified_arb.py": "e211131d2d4e8bdb2100d147be6df2b5850beba44a98be8e15af3438ccf9989e"
+  },
+  "problem": "Coupled periodic speed and running cost; alpha=1/8, beta=1/4",
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "records": [
+    {
+      "critic_side": 32,
+      "hold": 0.03125,
+      "iterations": 708,
+      "last_change": 9.772183062750628e-13,
+      "construction_seconds": 0.13666129997000098,
+      "coefficient_denominator": 16777216,
+      "coefficients_sha256": "a6db501a5526c78abff160369201f3e91d18d9c9acff0ef4e2fb4367dd9212a0",
+      "reference_error": {
+        "lower": 0.09206183394417167,
+        "upper": 0.09207595275984204,
+        "nodal_lower_numerator": 395402566,
+        "nodal_upper_numerator": 395402567,
+        "denominator": 4294967296,
+        "validation_side": 512,
+        "interpolation_correction": {
+          "lower_numerator": 15523545,
+          "upper_numerator": 15523546,
+          "denominator": 1099511627776,
+          "lower": 1.4118581930233631e-05,
+          "upper": 1.4118582839728333e-05
+        }
+      },
+      "settings": [
+        {
+          "location_side": 1024,
+          "center_side": 512,
+          "locations": 1048576,
+          "centers": 262144,
+          "reciprocal_scale": 16,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2613373037169,
+            "upper_numerator": 2613373037169,
+            "denominator": 1099511627776,
+            "lower": 2.3768489310614314,
+            "upper": 2.3768489310614314
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 167891315573,
+            "upper_numerator": 167891315574,
+            "denominator": 1099511627776,
+            "lower": 0.15269626198733022,
+            "upper": 0.1526962619882397
+          },
+          "threshold": {
+            "lower_numerator": 21890355200,
+            "upper_numerator": 21890355201,
+            "denominator": 1099511627776,
+            "lower": 0.01990916207432747,
+            "upper": 0.019909162075236964
+          },
+          "coverage_correction": {
+            "lower_numerator": 196122876347,
+            "upper_numerator": 196122876348,
+            "denominator": 1099511627776,
+            "lower": 0.17837271693406365,
+            "upper": 0.17837271693497314
+          },
+          "filtered_residual_numerators": {
+            "-1": 2241931247,
+            "1": 4113589218
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 2140080,
+            "1": 2734500
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 2734500,
+            "1": 2734500
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 770057275579,
+              "upper_numerator": 770057275580,
+              "denominator": 1099511627776,
+              "lower": 0.7003630122007962,
+              "upper": 0.7003630122017057
+            },
+            "1": {
+              "lower_numerator": 1249201716155,
+              "upper_numerator": 1249201716156,
+              "denominator": 1099511627776,
+              "lower": 1.1361423422886219,
+              "upper": 1.1361423422895314
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 1249201716155,
+            "upper_numerator": 1249201716156,
+            "denominator": 1099511627776,
+            "lower": 1.1361423422886219,
+            "upper": 1.1361423422895314
+          },
+          "verification_seconds": 1.6876198000391014,
+          "standalone_seconds": 2.480358500033617
+        },
+        {
+          "location_side": 1024,
+          "center_side": 512,
+          "locations": 1048576,
+          "centers": 262144,
+          "reciprocal_scale": 32,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2613373037169,
+            "upper_numerator": 2613373037169,
+            "denominator": 1099511627776,
+            "lower": 2.3768489310614314,
+            "upper": 2.3768489310614314
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 86223408161,
+            "upper_numerator": 86223408162,
+            "denominator": 1099511627776,
+            "lower": 0.07841973289123416,
+            "upper": 0.07841973289214366
+          },
+          "threshold": {
+            "lower_numerator": 22125236224,
+            "upper_numerator": 22125236225,
+            "denominator": 1099511627776,
+            "lower": 0.02012278512120247,
+            "upper": 0.020122785122111964
+          },
+          "coverage_correction": {
+            "lower_numerator": 325497502735,
+            "upper_numerator": 325497502736,
+            "denominator": 1099511627776,
+            "lower": 0.2960382541778017,
+            "upper": 0.2960382541787112
+          },
+          "filtered_residual_numerators": {
+            "-1": 1582796192,
+            "1": 3213725026
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 2264840,
+            "1": 2544212
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 2544212,
+            "1": 2544212
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 730693327887,
+              "upper_numerator": 730693327888,
+              "denominator": 1099511627776,
+              "lower": 0.6645617103340555,
+              "upper": 0.664561710334965
+            },
+            "1": {
+              "lower_numerator": 1148211109391,
+              "upper_numerator": 1148211109392,
+              "denominator": 1099511627776,
+              "lower": 1.0442919205079306,
+              "upper": 1.0442919205088401
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 1148211109391,
+            "upper_numerator": 1148211109392,
+            "denominator": 1099511627776,
+            "lower": 1.0442919205079306,
+            "upper": 1.0442919205088401
+          },
+          "verification_seconds": 0.6030974999885075,
+          "standalone_seconds": 1.395836199983023
+        },
+        {
+          "location_side": 1024,
+          "center_side": 512,
+          "locations": 1048576,
+          "centers": 262144,
+          "reciprocal_scale": 64,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2613373037169,
+            "upper_numerator": 2613373037169,
+            "denominator": 1099511627776,
+            "lower": 2.3768489310614314,
+            "upper": 2.3768489310614314
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 45389454455,
+            "upper_numerator": 45389454456,
+            "denominator": 1099511627776,
+            "lower": 0.041281468343186134,
+            "upper": 0.04128146834409563
+          },
+          "threshold": {
+            "lower_numerator": 22594998272,
+            "upper_numerator": 22594998273,
+            "denominator": 1099511627776,
+            "lower": 0.02055003121495247,
+            "upper": 0.020550031215861964
+          },
+          "coverage_correction": {
+            "lower_numerator": 584246755511,
+            "upper_numerator": 584246755512,
+            "denominator": 1099511627776,
+            "lower": 0.5313693286652779,
+            "upper": 0.5313693286661874
+          },
+          "filtered_residual_numerators": {
+            "-1": 1811905085,
+            "1": 3997839132
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 2328236,
+            "1": 2451992
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 2451992,
+            "1": 2451992
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 1048094457271,
+              "upper_numerator": 1048094457272,
+              "denominator": 1099511627776,
+              "lower": 0.9532363558455472,
+              "upper": 0.9532363558464567
+            },
+            "1": {
+              "lower_numerator": 1607693573303,
+              "upper_numerator": 1607693573304,
+              "denominator": 1099511627776,
+              "lower": 1.4621887869934653,
+              "upper": 1.4621887869943748
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 1607693573303,
+            "upper_numerator": 1607693573304,
+            "denominator": 1099511627776,
+            "lower": 1.4621887869934653,
+            "upper": 1.4621887869943748
+          },
+          "verification_seconds": 0.5949418000527658,
+          "standalone_seconds": 1.3876805000472814
+        },
+        {
+          "location_side": 2048,
+          "center_side": 1024,
+          "locations": 4194304,
+          "centers": 1048576,
+          "reciprocal_scale": 16,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2613373037169,
+            "upper_numerator": 2613373037169,
+            "denominator": 1099511627776,
+            "lower": 2.3768489310614314,
+            "upper": 2.3768489310614314
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 165613565198,
+            "upper_numerator": 165613565199,
+            "denominator": 1099511627776,
+            "lower": 0.15062466008930642,
+            "upper": 0.1506246600902159
+          },
+          "threshold": {
+            "lower_numerator": 10886457344,
+            "upper_numerator": 10886457345,
+            "denominator": 1099511627776,
+            "lower": 0.009901175275444984,
+            "upper": 0.00990117527635448
+          },
+          "coverage_correction": {
+            "lower_numerator": 97930036296,
+            "upper_numerator": 97930036297,
+            "denominator": 1099511627776,
+            "lower": 0.08906684915564256,
+            "upper": 0.08906684915655205
+          },
+          "filtered_residual_numerators": {
+            "-1": 2109188251,
+            "1": 3822397113
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 8486992,
+            "1": 10938500
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 10938500,
+            "1": 10938500
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 637882228552,
+              "upper_numerator": 637882228553,
+              "denominator": 1099511627776,
+              "lower": 0.5801505072231521,
+              "upper": 0.5801505072240616
+            },
+            "1": {
+              "lower_numerator": 1076463697224,
+              "upper_numerator": 1076463697225,
+              "denominator": 1099511627776,
+              "lower": 0.9790380292761256,
+              "upper": 0.9790380292770351
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 1076463697224,
+            "upper_numerator": 1076463697225,
+            "denominator": 1099511627776,
+            "lower": 0.9790380292761256,
+            "upper": 0.9790380292770351
+          },
+          "verification_seconds": 2.6877064000000246,
+          "standalone_seconds": 5.816357599978801
+        },
+        {
+          "location_side": 2048,
+          "center_side": 1024,
+          "locations": 4194304,
+          "centers": 1048576,
+          "reciprocal_scale": 32,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2613373037169,
+            "upper_numerator": 2613373037169,
+            "denominator": 1099511627776,
+            "lower": 2.3768489310614314,
+            "upper": 2.3768489310614314
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 83945657786,
+            "upper_numerator": 83945657787,
+            "denominator": 1099511627776,
+            "lower": 0.07634813099321036,
+            "upper": 0.07634813099411986
+          },
+          "threshold": {
+            "lower_numerator": 10945177600,
+            "upper_numerator": 10945177601,
+            "denominator": 1099511627776,
+            "lower": 0.009954581037163734,
+            "upper": 0.00995458103807323
+          },
+          "coverage_correction": {
+            "lower_numerator": 162485947613,
+            "upper_numerator": 162485947614,
+            "denominator": 1099511627776,
+            "lower": 0.14778010846657708,
+            "upper": 0.14778010846748657
+          },
+          "filtered_residual_numerators": {
+            "-1": 1176263154,
+            "1": 2789492998
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 8991616,
+            "1": 10174412
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 10174412,
+            "1": 10174412
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 463609315037,
+              "upper_numerator": 463609315038,
+              "denominator": 1099511627776,
+              "lower": 0.42165021571872785,
+              "upper": 0.42165021571963734
+            },
+            "1": {
+              "lower_numerator": 876596155101,
+              "upper_numerator": 876596155102,
+              "denominator": 1099511627776,
+              "lower": 0.7972595586588795,
+              "upper": 0.797259558659789
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 876596155101,
+            "upper_numerator": 876596155102,
+            "denominator": 1099511627776,
+            "lower": 0.7972595586588795,
+            "upper": 0.797259558659789
+          },
+          "verification_seconds": 2.5722615999984555,
+          "standalone_seconds": 5.700912799977232
+        },
+        {
+          "location_side": 2048,
+          "center_side": 1024,
+          "locations": 4194304,
+          "centers": 1048576,
+          "reciprocal_scale": 64,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2613373037169,
+            "upper_numerator": 2613373037169,
+            "denominator": 1099511627776,
+            "lower": 2.3768489310614314,
+            "upper": 2.3768489310614314
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 43111704080,
+            "upper_numerator": 43111704081,
+            "denominator": 1099511627776,
+            "lower": 0.039209866445162334,
+            "upper": 0.03920986644607183
+          },
+          "threshold": {
+            "lower_numerator": 11062618112,
+            "upper_numerator": 11062618113,
+            "denominator": 1099511627776,
+            "lower": 0.010061392560601234,
+            "upper": 0.01006139256151073
+          },
+          "coverage_correction": {
+            "lower_numerator": 291597770247,
+            "upper_numerator": 291597770248,
+            "denominator": 1099511627776,
+            "lower": 0.2652066270884461,
+            "upper": 0.2652066270893556
+          },
+          "filtered_residual_numerators": {
+            "-1": 1072858046,
+            "1": 2675487727
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 9248752,
+            "1": 9804652
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 9804652,
+            "1": 9804652
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 566249430023,
+              "upper_numerator": 566249430024,
+              "denominator": 1099511627776,
+              "lower": 0.515000856487859,
+              "upper": 0.5150008564887685
+            },
+            "1": {
+              "lower_numerator": 976522628359,
+              "upper_numerator": 976522628360,
+              "denominator": 1099511627776,
+              "lower": 0.8881421566538847,
+              "upper": 0.8881421566547942
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 976522628359,
+            "upper_numerator": 976522628360,
+            "denominator": 1099511627776,
+            "lower": 0.8881421566538847,
+            "upper": 0.8881421566547942
+          },
+          "verification_seconds": 2.4592178000020795,
+          "standalone_seconds": 5.587868999980856
+        },
+        {
+          "location_side": 4096,
+          "center_side": 2048,
+          "locations": 16777216,
+          "centers": 4194304,
+          "reciprocal_scale": 16,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2613373037169,
+            "upper_numerator": 2613373037169,
+            "denominator": 1099511627776,
+            "lower": 2.3768489310614314,
+            "upper": 2.3768489310614314
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 164474690010,
+            "upper_numerator": 164474690011,
+            "denominator": 1099511627776,
+            "lower": 0.14958885913983977,
+            "upper": 0.14958885914074926
+          },
+          "threshold": {
+            "lower_numerator": 5428548608,
+            "upper_numerator": 5428548609,
+            "denominator": 1099511627776,
+            "lower": 0.004937236197292805,
+            "upper": 0.004937236198202299
+          },
+          "coverage_correction": {
+            "lower_numerator": 48932167679,
+            "upper_numerator": 48932167680,
+            "denominator": 1099511627776,
+            "lower": 0.04450354725031502,
+            "upper": 0.04450354725122452
+          },
+          "filtered_residual_numerators": {
+            "-1": 2021624684,
+            "1": 3766680256
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 33794980,
+            "1": 43737388
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 43741392,
+            "1": 43741392
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 566468086783,
+              "upper_numerator": 566468086784,
+              "denominator": 1099511627776,
+              "lower": 0.5151997236525858,
+              "upper": 0.5151997236534953
+            },
+            "1": {
+              "lower_numerator": 1013202313215,
+              "upper_numerator": 1013202313216,
+              "denominator": 1099511627776,
+              "lower": 0.9215021356931175,
+              "upper": 0.921502135694027
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 1013202313215,
+            "upper_numerator": 1013202313216,
+            "denominator": 1099511627776,
+            "lower": 0.9215021356931175,
+            "upper": 0.921502135694027
+          },
+          "verification_seconds": 11.548403699998744,
+          "standalone_seconds": 24.196868300030474
+        },
+        {
+          "location_side": 4096,
+          "center_side": 2048,
+          "locations": 16777216,
+          "centers": 4194304,
+          "reciprocal_scale": 32,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2613373037169,
+            "upper_numerator": 2613373037169,
+            "denominator": 1099511627776,
+            "lower": 2.3768489310614314,
+            "upper": 2.3768489310614314
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 82806782599,
+            "upper_numerator": 82806782600,
+            "denominator": 1099511627776,
+            "lower": 0.07531233004465321,
+            "upper": 0.0753123300455627
+          },
+          "threshold": {
+            "lower_numerator": 5443228672,
+            "upper_numerator": 5443228673,
+            "denominator": 1099511627776,
+            "lower": 0.004950587637722492,
+            "upper": 0.004950587638631987
+          },
+          "coverage_correction": {
+            "lower_numerator": 81177272868,
+            "upper_numerator": 81177272869,
+            "denominator": 1099511627776,
+            "lower": 0.07383029957782128,
+            "upper": 0.07383029957873077
+          },
+          "filtered_residual_numerators": {
+            "-1": 1004191465,
+            "1": 2615331182
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 35817248,
+            "1": 40692212
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 40692212,
+            "1": 40692212
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 338250287908,
+              "upper_numerator": 338250287909,
+              "denominator": 1099511627776,
+              "lower": 0.3076368447254936,
+              "upper": 0.30763684472640307
+            },
+            "1": {
+              "lower_numerator": 750702055460,
+              "upper_numerator": 750702055461,
+              "denominator": 1099511627776,
+              "lower": 0.6827595420509169,
+              "upper": 0.6827595420518264
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 750702055460,
+            "upper_numerator": 750702055461,
+            "denominator": 1099511627776,
+            "lower": 0.6827595420509169,
+            "upper": 0.6827595420518264
+          },
+          "verification_seconds": 10.67959489999339,
+          "standalone_seconds": 23.32805950002512
+        },
+        {
+          "location_side": 4096,
+          "center_side": 2048,
+          "locations": 16777216,
+          "centers": 4194304,
+          "reciprocal_scale": 64,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2613373037169,
+            "upper_numerator": 2613373037169,
+            "denominator": 1099511627776,
+            "lower": 2.3768489310614314,
+            "upper": 2.3768489310614314
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 41972828893,
+            "upper_numerator": 41972828894,
+            "denominator": 1099511627776,
+            "lower": 0.03817406549660518,
+            "upper": 0.038174065497514675
+          },
+          "threshold": {
+            "lower_numerator": 5472588800,
+            "upper_numerator": 5472588801,
+            "denominator": 1099511627776,
+            "lower": 0.004977290518581867,
+            "upper": 0.004977290519491362
+          },
+          "coverage_correction": {
+            "lower_numerator": 145667483246,
+            "upper_numerator": 145667483247,
+            "denominator": 1099511627776,
+            "lower": 0.1324838042328338,
+            "upper": 0.13248380423374329
+          },
+          "filtered_residual_numerators": {
+            "-1": 793944440,
+            "1": 2635612301
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 36850996,
+            "1": 39210768
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 39210768,
+            "1": 39210768
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 348917259886,
+              "upper_numerator": 348917259887,
+              "denominator": 1099511627776,
+              "lower": 0.31733839922344487,
+              "upper": 0.31733839922435436
+            },
+            "1": {
+              "lower_numerator": 820384232302,
+              "upper_numerator": 820384232303,
+              "denominator": 1099511627776,
+              "lower": 0.7461351126967202,
+              "upper": 0.7461351126976297
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 820384232302,
+            "upper_numerator": 820384232303,
+            "denominator": 1099511627776,
+            "lower": 0.7461351126967202,
+            "upper": 0.7461351126976297
+          },
+          "verification_seconds": 10.329570800007787,
+          "standalone_seconds": 22.978035400039516
+        }
+      ]
+    },
+    {
+      "critic_side": 64,
+      "hold": 0.015625,
+      "iterations": 1370,
+      "last_change": 9.949818746690653e-13,
+      "construction_seconds": 0.6902196999872103,
+      "coefficient_denominator": 16777216,
+      "coefficients_sha256": "846eb5dbe4e82d8476194193b4fad9510a5d1d673a3305b56994fa58c400f325",
+      "reference_error": {
+        "lower": 0.045278729405254126,
+        "upper": 0.0452928482209245,
+        "nodal_lower_numerator": 194470662,
+        "nodal_upper_numerator": 194470663,
+        "denominator": 4294967296,
+        "validation_side": 512,
+        "interpolation_correction": {
+          "lower_numerator": 15523545,
+          "upper_numerator": 15523546,
+          "denominator": 1099511627776,
+          "lower": 1.4118581930233631e-05,
+          "upper": 1.4118582839728333e-05
+        }
+      },
+      "settings": [
+        {
+          "location_side": 1024,
+          "center_side": 512,
+          "locations": 1048576,
+          "centers": 262144,
+          "reciprocal_scale": 16,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2620631883579,
+            "upper_numerator": 2620631883579,
+            "denominator": 1099511627776,
+            "lower": 2.38345081341231,
+            "upper": 2.38345081341231
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 168344993473,
+            "upper_numerator": 168344993474,
+            "denominator": 1099511627776,
+            "lower": 0.15310887963369169,
+            "upper": 0.15310887963460118
+          },
+          "threshold": {
+            "lower_numerator": 21950504960,
+            "upper_numerator": 21950504961,
+            "denominator": 1099511627776,
+            "lower": 0.019963867962360382,
+            "upper": 0.019963867963269877
+          },
+          "coverage_correction": {
+            "lower_numerator": 196185246048,
+            "upper_numerator": 196185246049,
+            "denominator": 1099511627776,
+            "lower": 0.1784294418466743,
+            "upper": 0.1784294418475838
+          },
+          "filtered_residual_numerators": {
+            "-1": 2402525823,
+            "1": 3498317411
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 2143188,
+            "1": 2737624
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 2737624,
+            "1": 2737624
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 811231856736,
+              "upper_numerator": 811231856737,
+              "denominator": 1099511627776,
+              "lower": 0.7378110756108072,
+              "upper": 0.7378110756117167
+            },
+            "1": {
+              "lower_numerator": 1091754503264,
+              "upper_numerator": 1091754503265,
+              "denominator": 1099511627776,
+              "lower": 0.9929449363553431,
+              "upper": 0.9929449363562526
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 1091754503264,
+            "upper_numerator": 1091754503265,
+            "denominator": 1099511627776,
+            "lower": 0.9929449363553431,
+            "upper": 0.9929449363562526
+          },
+          "verification_seconds": 0.5753871999913827,
+          "standalone_seconds": 1.3681258999858983
+        },
+        {
+          "location_side": 1024,
+          "center_side": 512,
+          "locations": 1048576,
+          "centers": 262144,
+          "reciprocal_scale": 32,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2620631883579,
+            "upper_numerator": 2620631883579,
+            "denominator": 1099511627776,
+            "lower": 2.38345081341231,
+            "upper": 2.38345081341231
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 86450247111,
+            "upper_numerator": 86450247112,
+            "denominator": 1099511627776,
+            "lower": 0.0786260417144149,
+            "upper": 0.07862604171532439
+          },
+          "threshold": {
+            "lower_numerator": 22185385984,
+            "upper_numerator": 22185385985,
+            "denominator": 1099511627776,
+            "lower": 0.020177491009235382,
+            "upper": 0.020177491010144877
+          },
+          "coverage_correction": {
+            "lower_numerator": 325559872437,
+            "upper_numerator": 325559872438,
+            "denominator": 1099511627776,
+            "lower": 0.2960949790913219,
+            "upper": 0.29609497909223137
+          },
+          "filtered_residual_numerators": {
+            "-1": 1685422923,
+            "1": 2611955377
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 2265708,
+            "1": 2542600
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 2542600,
+            "1": 2542600
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 757028140725,
+              "upper_numerator": 757028140726,
+              "denominator": 1099511627776,
+              "lower": 0.6885130830823982,
+              "upper": 0.6885130830833077
+            },
+            "1": {
+              "lower_numerator": 994220448949,
+              "upper_numerator": 994220448950,
+              "denominator": 1099511627776,
+              "lower": 0.9042382307134176,
+              "upper": 0.9042382307143271
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 994220448949,
+            "upper_numerator": 994220448950,
+            "denominator": 1099511627776,
+            "lower": 0.9042382307134176,
+            "upper": 0.9042382307143271
+          },
+          "verification_seconds": 0.5567479000310414,
+          "standalone_seconds": 1.349486600025557
+        },
+        {
+          "location_side": 1024,
+          "center_side": 512,
+          "locations": 1048576,
+          "centers": 262144,
+          "reciprocal_scale": 64,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2620631883579,
+            "upper_numerator": 2620631883579,
+            "denominator": 1099511627776,
+            "lower": 2.38345081341231,
+            "upper": 2.38345081341231
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 45502873930,
+            "upper_numerator": 45502873931,
+            "denominator": 1099511627776,
+            "lower": 0.0413846227547765,
+            "upper": 0.041384622755685996
+          },
+          "threshold": {
+            "lower_numerator": 22655148032,
+            "upper_numerator": 22655148033,
+            "denominator": 1099511627776,
+            "lower": 0.020604737102985382,
+            "upper": 0.020604737103894877
+          },
+          "coverage_correction": {
+            "lower_numerator": 584309125213,
+            "upper_numerator": 584309125214,
+            "denominator": 1099511627776,
+            "lower": 0.531426053578798,
+            "upper": 0.5314260535797075
+          },
+          "filtered_residual_numerators": {
+            "-1": 1987566349,
+            "1": 2716180947
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 2328748,
+            "1": 2452376
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 2452376,
+            "1": 2452376
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 1093126110557,
+              "upper_numerator": 1093126110558,
+              "denominator": 1099511627776,
+              "lower": 0.9941924059212397,
+              "upper": 0.9941924059221492
+            },
+            "1": {
+              "lower_numerator": 1279651447645,
+              "upper_numerator": 1279651447646,
+              "denominator": 1099511627776,
+              "lower": 1.1638362117491852,
+              "upper": 1.1638362117500947
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 1279651447645,
+            "upper_numerator": 1279651447646,
+            "denominator": 1099511627776,
+            "lower": 1.1638362117491852,
+            "upper": 1.1638362117500947
+          },
+          "verification_seconds": 0.5548081999877468,
+          "standalone_seconds": 1.3475468999822624
+        },
+        {
+          "location_side": 2048,
+          "center_side": 1024,
+          "locations": 4194304,
+          "centers": 1048576,
+          "reciprocal_scale": 16,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2620631883579,
+            "upper_numerator": 2620631883579,
+            "denominator": 1099511627776,
+            "lower": 2.38345081341231,
+            "upper": 2.38345081341231
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 166067243098,
+            "upper_numerator": 166067243099,
+            "denominator": 1099511627776,
+            "lower": 0.15103727773566789,
+            "upper": 0.15103727773657738
+          },
+          "threshold": {
+            "lower_numerator": 10916532224,
+            "upper_numerator": 10916532225,
+            "denominator": 1099511627776,
+            "lower": 0.009928528219461441,
+            "upper": 0.009928528220370936
+          },
+          "coverage_correction": {
+            "lower_numerator": 97961221147,
+            "upper_numerator": 97961221148,
+            "denominator": 1099511627776,
+            "lower": 0.08909521161240264,
+            "upper": 0.08909521161331213
+          },
+          "filtered_residual_numerators": {
+            "-1": 2262752112,
+            "1": 3245906543
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 8501740,
+            "1": 10945128
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 10945128,
+            "1": 10945128
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 677225761819,
+              "upper_numerator": 677225761820,
+              "denominator": 1099511627776,
+              "lower": 0.6159332422785155,
+              "upper": 0.615933242279425
+            },
+            "1": {
+              "lower_numerator": 928913296155,
+              "upper_numerator": 928913296156,
+              "denominator": 1099511627776,
+              "lower": 0.8448417212593995,
+              "upper": 0.844841721260309
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 928913296155,
+            "upper_numerator": 928913296156,
+            "denominator": 1099511627776,
+            "lower": 0.8448417212593995,
+            "upper": 0.844841721260309
+          },
+          "verification_seconds": 2.615236099984031,
+          "standalone_seconds": 5.7438872999628074
+        },
+        {
+          "location_side": 2048,
+          "center_side": 1024,
+          "locations": 4194304,
+          "centers": 1048576,
+          "reciprocal_scale": 32,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2620631883579,
+            "upper_numerator": 2620631883579,
+            "denominator": 1099511627776,
+            "lower": 2.38345081341231,
+            "upper": 2.38345081341231
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 84172496736,
+            "upper_numerator": 84172496737,
+            "denominator": 1099511627776,
+            "lower": 0.0765544398163911,
+            "upper": 0.07655443981730059
+          },
+          "threshold": {
+            "lower_numerator": 10975252480,
+            "upper_numerator": 10975252481,
+            "denominator": 1099511627776,
+            "lower": 0.009981933981180191,
+            "upper": 0.009981933982089686
+          },
+          "coverage_correction": {
+            "lower_numerator": 162517132464,
+            "upper_numerator": 162517132465,
+            "denominator": 1099511627776,
+            "lower": 0.14780847092333715,
+            "upper": 0.14780847092424665
+          },
+          "filtered_residual_numerators": {
+            "-1": 1336836794,
+            "1": 2180877183
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 9001716,
+            "1": 10179944
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 10179944,
+            "1": 10179944
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 504747351728,
+              "upper_numerator": 504747351729,
+              "denominator": 1099511627776,
+              "lower": 0.4590650421305327,
+              "upper": 0.45906504213144217
+            },
+            "1": {
+              "lower_numerator": 720821691312,
+              "upper_numerator": 720821691313,
+              "denominator": 1099511627776,
+              "lower": 0.6555835091712652,
+              "upper": 0.6555835091721747
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 720821691312,
+            "upper_numerator": 720821691313,
+            "denominator": 1099511627776,
+            "lower": 0.6555835091712652,
+            "upper": 0.6555835091721747
+          },
+          "verification_seconds": 2.4664426000090316,
+          "standalone_seconds": 5.595093799987808
+        },
+        {
+          "location_side": 2048,
+          "center_side": 1024,
+          "locations": 4194304,
+          "centers": 1048576,
+          "reciprocal_scale": 64,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2620631883579,
+            "upper_numerator": 2620631883579,
+            "denominator": 1099511627776,
+            "lower": 2.38345081341231,
+            "upper": 2.38345081341231
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 43225123555,
+            "upper_numerator": 43225123556,
+            "denominator": 1099511627776,
+            "lower": 0.0393130208567527,
+            "upper": 0.039313020857662195
+          },
+          "threshold": {
+            "lower_numerator": 11092692992,
+            "upper_numerator": 11092692993,
+            "denominator": 1099511627776,
+            "lower": 0.010088745504617691,
+            "upper": 0.010088745505527186
+          },
+          "coverage_correction": {
+            "lower_numerator": 291628955098,
+            "upper_numerator": 291628955099,
+            "denominator": 1099511627776,
+            "lower": 0.2652349895452062,
+            "upper": 0.2652349895461157
+          },
+          "filtered_residual_numerators": {
+            "-1": 1152529434,
+            "1": 2001293013
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 9258948,
+            "1": 9801488
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 9801488,
+            "1": 9801488
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 586676490202,
+              "upper_numerator": 586676490203,
+              "denominator": 1099511627776,
+              "lower": 0.5335791594934562,
+              "upper": 0.5335791594943657
+            },
+            "1": {
+              "lower_numerator": 803959966426,
+              "upper_numerator": 803959966427,
+              "denominator": 1099511627776,
+              "lower": 0.7311973299019883,
+              "upper": 0.7311973299028978
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 803959966426,
+            "upper_numerator": 803959966427,
+            "denominator": 1099511627776,
+            "lower": 0.7311973299019883,
+            "upper": 0.7311973299028978
+          },
+          "verification_seconds": 2.375231200014241,
+          "standalone_seconds": 5.503882399993017
+        },
+        {
+          "location_side": 4096,
+          "center_side": 2048,
+          "locations": 16777216,
+          "centers": 4194304,
+          "reciprocal_scale": 16,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2620631883579,
+            "upper_numerator": 2620631883579,
+            "denominator": 1099511627776,
+            "lower": 2.38345081341231,
+            "upper": 2.38345081341231
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 164928367911,
+            "upper_numerator": 164928367912,
+            "denominator": 1099511627776,
+            "lower": 0.15000147678711073,
+            "upper": 0.15000147678802023
+          },
+          "threshold": {
+            "lower_numerator": 5443586048,
+            "upper_numerator": 5443586049,
+            "denominator": 1099511627776,
+            "lower": 0.004950912669301033,
+            "upper": 0.004950912670210528
+          },
+          "coverage_correction": {
+            "lower_numerator": 48947760104,
+            "upper_numerator": 48947760105,
+            "denominator": 1099511627776,
+            "lower": 0.044517728478240315,
+            "upper": 0.04451772847914981
+          },
+          "filtered_residual_numerators": {
+            "-1": 2189809073,
+            "1": 3145340900
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 33869372,
+            "1": 43781804
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 43781804,
+            "1": 43781804
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 609538882792,
+              "upper_numerator": 609538882793,
+              "denominator": 1099511627776,
+              "lower": 0.5543723844239139,
+              "upper": 0.5543723844248234
+            },
+            "1": {
+              "lower_numerator": 854155030504,
+              "upper_numerator": 854155030505,
+              "denominator": 1099511627776,
+              "lower": 0.7768494747360819,
+              "upper": 0.7768494747369914
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 854155030504,
+            "upper_numerator": 854155030505,
+            "denominator": 1099511627776,
+            "lower": 0.7768494747360819,
+            "upper": 0.7768494747369914
+          },
+          "verification_seconds": 11.645062800031155,
+          "standalone_seconds": 24.293527400062885
+        },
+        {
+          "location_side": 4096,
+          "center_side": 2048,
+          "locations": 16777216,
+          "centers": 4194304,
+          "reciprocal_scale": 32,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2620631883579,
+            "upper_numerator": 2620631883579,
+            "denominator": 1099511627776,
+            "lower": 2.38345081341231,
+            "upper": 2.38345081341231
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 83033621549,
+            "upper_numerator": 83033621550,
+            "denominator": 1099511627776,
+            "lower": 0.07551863886783394,
+            "upper": 0.07551863886874344
+          },
+          "threshold": {
+            "lower_numerator": 5458266112,
+            "upper_numerator": 5458266113,
+            "denominator": 1099511627776,
+            "lower": 0.0049642641097307205,
+            "upper": 0.004964264110640215
+          },
+          "coverage_correction": {
+            "lower_numerator": 81192865293,
+            "upper_numerator": 81192865294,
+            "denominator": 1099511627776,
+            "lower": 0.07384448080574657,
+            "upper": 0.07384448080665607
+          },
+          "filtered_residual_numerators": {
+            "-1": 1173561497,
+            "1": 1988438548
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 35847760,
+            "1": 40706244
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 40706244,
+            "1": 40706244
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 381624608525,
+              "upper_numerator": 381624608526,
+              "denominator": 1099511627776,
+              "lower": 0.34708555951965536,
+              "upper": 0.34708555952056486
+            },
+            "1": {
+              "lower_numerator": 590233133581,
+              "upper_numerator": 590233133582,
+              "denominator": 1099511627776,
+              "lower": 0.5368139078027525,
+              "upper": 0.536813907803662
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 590233133581,
+            "upper_numerator": 590233133582,
+            "denominator": 1099511627776,
+            "lower": 0.5368139078027525,
+            "upper": 0.536813907803662
+          },
+          "verification_seconds": 10.896164499979932,
+          "standalone_seconds": 23.54462910001166
+        },
+        {
+          "location_side": 4096,
+          "center_side": 2048,
+          "locations": 16777216,
+          "centers": 4194304,
+          "reciprocal_scale": 64,
+          "backend": "cuda",
+          "implementation": "sparse filtered pairs with two quadratic-max passes",
+          "L_u": {
+            "lower_numerator": 2620631883579,
+            "upper_numerator": 2620631883579,
+            "denominator": 1099511627776,
+            "lower": 2.38345081341231,
+            "upper": 2.38345081341231
+          },
+          "slope_restriction": "L=L_u; no L_V input",
+          "radius": {
+            "lower_numerator": 42086248368,
+            "upper_numerator": 42086248369,
+            "denominator": 1099511627776,
+            "lower": 0.03827721990819555,
+            "upper": 0.03827721990910504
+          },
+          "threshold": {
+            "lower_numerator": 5487626240,
+            "upper_numerator": 5487626241,
+            "denominator": 1099511627776,
+            "lower": 0.0049909669905900955,
+            "upper": 0.00499096699149959
+          },
+          "coverage_correction": {
+            "lower_numerator": 145683075672,
+            "upper_numerator": 145683075673,
+            "denominator": 1099511627776,
+            "lower": 0.13249798546166858,
+            "upper": 0.13249798546257807
+          },
+          "filtered_residual_numerators": {
+            "-1": 783411433,
+            "1": 1576791548
+          },
+          "residual_denominator": 4294967296,
+          "filtered_candidate_counts": {
+            "-1": 36863164,
+            "1": 39221944
+          },
+          "stationarity_pairs_enumerated": {
+            "-1": 39221944,
+            "1": 39221944
+          },
+          "filtered_one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 346236402520,
+              "upper_numerator": 346236402521,
+              "denominator": 1099511627776,
+              "lower": 0.31490017365285894,
+              "upper": 0.31490017365376843
+            },
+            "1": {
+              "lower_numerator": 549341711960,
+              "upper_numerator": 549341711961,
+              "denominator": 1099511627776,
+              "lower": 0.49962337649049005,
+              "upper": 0.49962337649139954
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 549341711960,
+            "upper_numerator": 549341711961,
+            "denominator": 1099511627776,
+            "lower": 0.49962337649049005,
+            "upper": 0.49962337649139954
+          },
+          "verification_seconds": 10.279736700002104,
+          "standalone_seconds": 22.928201300033834
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "center_preprocessing_seconds": {
+    "512": 0.7927386999945156,
+    "1024": 3.1286511999787763,
+    "2048": 12.64846460003173
+  },
+  "design": {
+    "grids": [
+      [
+        1024,
+        512
+      ],
+      [
+        2048,
+        1024
+      ],
+      [
+        4096,
+        2048
+      ]
+    ],
+    "reciprocal_scales": [
+      16,
+      32,
+      64
+    ],
+    "critic_sides": [
+      32,
+      64
+    ]
+  }
+}

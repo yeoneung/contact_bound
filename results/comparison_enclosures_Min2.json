@@ -1,0 +1,11 @@
+{
+  "weights_sha256": "b7bf384e38d2eef88a88840f848dc720860c99442dd5cb485927cb8bed7bee24",
+  "arithmetic_source_sha256": "e211131d2d4e8bdb2100d147be6df2b5850beba44a98be8e15af3438ccf9989e",
+  "original_verifier_sha256": "d0b7761aa77078553f60f983f59540ec7c6e8f289729ccaead5dd84ccd2f1879",
+  "enclosures_sha256": "c23f36672ca472d3fe6143e1531a1beed1fb9a7a0c7e97bcdb055e22f1f51820",
+  "L_u_numerator": 2535582367424,
+  "denominator": 1099511627776,
+  "derivative_cells": 65536,
+  "evaluation_nodes": 65536,
+  "evaluation_seconds": 61.91504360002
+}

@@ -1,0 +1,14 @@
+{
+  "successful": true,
+  "checks_run": 5,
+  "flow_points": 36,
+  "quadrature_cases": 24,
+  "panels_per_case": [
+    2,
+    8
+  ],
+  "hold_bias_points": 51,
+  "precision_decimal_digits": 70,
+  "known_contact_error_cases": 6,
+  "direct_successor_critic_checks": 6
+}

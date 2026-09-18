@@ -1,0 +1,49 @@
+{
+  "fixed_critics": [
+    "MLP",
+    "Min2"
+  ],
+  "training_seed": 1,
+  "retrain": false,
+  "bellman_reciprocal_holds": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "bellman_nodes": 65536,
+  "contact_scale_scan": {
+    "M": 16384,
+    "N": 262144,
+    "reciprocal_scales": [
+      16,
+      32,
+      64,
+      128,
+      256
+    ]
+  },
+  "location_refinement": {
+    "reciprocal_scale": 64,
+    "N": 262144,
+    "M": [
+      4096,
+      16384,
+      65536
+    ]
+  },
+  "center_refinement": {
+    "reciprocal_scale": 64,
+    "M": 16384,
+    "N": [
+      16384,
+      65536,
+      262144,
+      1048576
+    ]
+  },
+  "contact_witnesses": "For every scanned scale, verify the lower-sign maximizer at the center with the largest near-contact residual. This diagnoses the fixed model and is not a training or checkpoint selection.",
+  "precision_bits": 128,
+  "reference_value": "Used only to enclose actual error; not used to measure contact or Bellman residuals. Analytic problem structure supplies L_V and hold-bias bound.",
+  "timing": "One sequential CPU process; common Lipschitz verification and network evaluations recorded separately from each estimator."
+}

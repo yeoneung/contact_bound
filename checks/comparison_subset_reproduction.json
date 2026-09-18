@@ -1,0 +1,10 @@
+{
+  "successful": true,
+  "bellman_settings_recomputed": 8,
+  "contact_settings_recomputed": 2,
+  "contact_witnesses_recomputed": 2,
+  "cached_enclosures_used": true,
+  "global_derivative_verification_repeated": false,
+  "full_contact_sweep_repeated": false,
+  "all_non_timing_fields_match": true
+}

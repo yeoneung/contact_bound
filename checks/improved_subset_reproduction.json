@@ -1,0 +1,34 @@
+{
+  "successful": true,
+  "settings_recomputed": [
+    {
+      "critic": "MLP",
+      "method": "shifted",
+      "reciprocal_scale": 8
+    },
+    {
+      "critic": "MLP",
+      "method": "shifted",
+      "reciprocal_scale": 16
+    },
+    {
+      "critic": "MLP",
+      "method": "filtered",
+      "reciprocal_scale": 64
+    },
+    {
+      "critic": "Min2",
+      "method": "shifted",
+      "reciprocal_scale": 32
+    },
+    {
+      "critic": "Min2",
+      "method": "filtered",
+      "reciprocal_scale": 64
+    }
+  ],
+  "all_non_timing_fields_match": true,
+  "cached_verified_enclosures_used": true,
+  "full_derivative_verification_repeated": false,
+  "entire_scale_sweep_repeated": false
+}

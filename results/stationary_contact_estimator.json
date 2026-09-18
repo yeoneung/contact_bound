@@ -1,0 +1,559 @@
+{
+  "precision_bits": 128,
+  "hashes": {
+    "code\\experiments\\refine_contact_stationarity.py": "28b05aaacbf0a9cffef3f9be34b79c16b3cc24da5e3e4382224d16479caaa18f",
+    "code\\hjrl\\verified_stationarity.py": "c3d2fbeb515bab4ae03f33da5aef53f94f718f22542d4fc9eb9c91d015eb3d83",
+    "code\\hjrl\\verified_arb.py": "e211131d2d4e8bdb2100d147be6df2b5850beba44a98be8e15af3438ccf9989e",
+    "results\\verified_neural_models.pt": "b7bf384e38d2eef88a88840f848dc720860c99442dd5cb485927cb8bed7bee24"
+  },
+  "reciprocal_scales": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "nodes": 65536,
+  "centers": 16384,
+  "method": "Optional stationarity filter for the shifted residual",
+  "development": "Added after the first shifted-residual scan. All five scales are retained; no model selection.",
+  "records": [
+    {
+      "critic": "MLP",
+      "value_enclosures_sha256": "c6e8b5348fe8dc29a88be63d2e913f624db5da9569ea1105353dfbb4a80dc992",
+      "derivative_enclosures_sha256": "7dff01b8daefd369e40728bd50b11e3148eab7e621f62f9ba97ff5676c580514",
+      "derivative_verification_seconds": 51.730066500022076,
+      "settings": [
+        {
+          "reciprocal_scale": 4,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 777568308,
+            "upper_numerator": 777568309,
+            "denominator": 1099511627776,
+            "lower": 0.0007071942563925404,
+            "upper": 0.0007071942573020351
+          },
+          "candidate_residual_upper": {
+            "-1": 0.7598198830273759,
+            "1": 1.0536665210483989
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 836208364712,
+              "upper_numerator": 836208364713,
+              "denominator": 1099511627776,
+              "lower": 0.7605270772837684,
+              "upper": 0.7605270772846779
+            },
+            "1": {
+              "lower_numerator": 1159296159999,
+              "upper_numerator": 1159296160000,
+              "denominator": 1099511627776,
+              "lower": 1.0543737153047914,
+              "upper": 1.054373715305701
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 1159296159999,
+            "upper_numerator": 1159296160000,
+            "denominator": 1099511627776,
+            "lower": 1.0543737153047914,
+            "upper": 1.054373715305701
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.7961487175625734,
+            "1": 1.0676026182527494
+          },
+          "candidate_counts_before": {
+            "-1": 9282423,
+            "1": 5951165
+          },
+          "candidate_counts_after": {
+            "-1": 58813,
+            "1": 37551
+          },
+          "seconds": 62.56824430002598
+        },
+        {
+          "reciprocal_scale": 8,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 1113138228,
+            "upper_numerator": 1113138229,
+            "denominator": 1099511627776,
+            "lower": 0.0010123933207069058,
+            "upper": 0.0010123933216164005
+          },
+          "candidate_residual_upper": {
+            "-1": 0.5923297645558705,
+            "1": 0.6593343001759422
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 652386601835,
+              "upper_numerator": 652386601836,
+              "denominator": 1099511627776,
+              "lower": 0.5933421578765774,
+              "upper": 0.5933421578774869
+            },
+            "1": {
+              "lower_numerator": 726058867863,
+              "upper_numerator": 726058867864,
+              "denominator": 1099511627776,
+              "lower": 0.6603466934966491,
+              "upper": 0.6603466934975586
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 726058867863,
+            "upper_numerator": 726058867864,
+            "denominator": 1099511627776,
+            "lower": 0.6603466934966491,
+            "upper": 0.6603466934975586
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.6557436890025201,
+            "1": 0.7073298865861943
+          },
+          "candidate_counts_before": {
+            "-1": 7458509,
+            "1": 6190983
+          },
+          "candidate_counts_after": {
+            "-1": 68961,
+            "1": 59489
+          },
+          "seconds": 30.142149599967524
+        },
+        {
+          "reciprocal_scale": 16,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 1784278068,
+            "upper_numerator": 1784278069,
+            "denominator": 1099511627776,
+            "lower": 0.0016227914493356366,
+            "upper": 0.0016227914502451313
+          },
+          "candidate_residual_upper": {
+            "-1": 0.5616818397593306,
+            "1": 0.5077054036592017
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 619359991994,
+              "upper_numerator": 619359991995,
+              "denominator": 1099511627776,
+              "lower": 0.5633046312086663,
+              "upper": 0.5633046312095757
+            },
+            "1": {
+              "lower_numerator": 560012272876,
+              "upper_numerator": 560012272877,
+              "denominator": 1099511627776,
+              "lower": 0.5093281951085373,
+              "upper": 0.5093281951094468
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 619359991994,
+            "upper_numerator": 619359991995,
+            "denominator": 1099511627776,
+            "lower": 0.5633046312086663,
+            "upper": 0.5633046312095757
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.6555512944023576,
+            "1": 0.5632586173669551
+          },
+          "candidate_counts_before": {
+            "-1": 5510678,
+            "1": 5229224
+          },
+          "candidate_counts_after": {
+            "-1": 70222,
+            "1": 73187
+          },
+          "seconds": 14.435721799964085
+        },
+        {
+          "reciprocal_scale": 32,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 3126557748,
+            "upper_numerator": 3126557749,
+            "denominator": 1099511627776,
+            "lower": 0.002843587706593098,
+            "upper": 0.002843587707502593
+          },
+          "candidate_residual_upper": {
+            "-1": 0.521730227684202,
+            "1": 0.4261729633471987
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 576775009649,
+              "upper_numerator": 576775009650,
+              "denominator": 1099511627776,
+              "lower": 0.5245738153907951,
+              "upper": 0.5245738153917046
+            },
+            "1": {
+              "lower_numerator": 471708686392,
+              "upper_numerator": 471708686393,
+              "denominator": 1099511627776,
+              "lower": 0.4290165510537918,
+              "upper": 0.42901655105470127
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 576775009649,
+            "upper_numerator": 576775009650,
+            "denominator": 1099511627776,
+            "lower": 0.5245738153907951,
+            "upper": 0.5245738153917046
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.6553922154289467,
+            "1": 0.5655188199370969
+          },
+          "candidate_counts_before": {
+            "-1": 3865707,
+            "1": 3860041
+          },
+          "candidate_counts_after": {
+            "-1": 68350,
+            "1": 71641
+          },
+          "seconds": 7.11125479999464
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 5811117108,
+            "upper_numerator": 5811117109,
+            "denominator": 1099511627776,
+            "lower": 0.005285180221108021,
+            "upper": 0.005285180222017516
+          },
+          "candidate_residual_upper": {
+            "-1": 0.5019359736907063,
+            "1": 0.41007929455281555
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 557695556580,
+              "upper_numerator": 557695556581,
+              "denominator": 1099511627776,
+              "lower": 0.5072211539118143,
+              "upper": 0.5072211539127238
+            },
+            "1": {
+              "lower_numerator": 456698069779,
+              "upper_numerator": 456698069780,
+              "denominator": 1099511627776,
+              "lower": 0.4153644747739236,
+              "upper": 0.41536447477483307
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 557695556580,
+            "upper_numerator": 557695556581,
+            "denominator": 1099511627776,
+            "lower": 0.5072211539118143,
+            "upper": 0.5072211539127238
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.7656214070411806,
+            "1": 0.6031566854053381
+          },
+          "candidate_counts_before": {
+            "-1": 2739845,
+            "1": 2764697
+          },
+          "candidate_counts_after": {
+            "-1": 68194,
+            "1": 70217
+          },
+          "seconds": 3.523592200013809
+        }
+      ]
+    },
+    {
+      "critic": "Min2",
+      "value_enclosures_sha256": "c23f36672ca472d3fe6143e1531a1beed1fb9a7a0c7e97bcdb055e22f1f51820",
+      "derivative_enclosures_sha256": "04e31191397610c54690e4637372075e8fe1c5bf772e3109f949d7080283fc51",
+      "derivative_verification_seconds": 100.03860470000654,
+      "settings": [
+        {
+          "reciprocal_scale": 4,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 777026624,
+            "upper_numerator": 777026625,
+            "denominator": 1099511627776,
+            "lower": 0.0007067015976645052,
+            "upper": 0.0007067015985739999
+          },
+          "candidate_residual_upper": {
+            "-1": 0.9214802177584716,
+            "1": 1.0733691200621251
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 1013955240815,
+              "upper_numerator": 1013955240816,
+              "denominator": 1099511627776,
+              "lower": 0.9221869193561361,
+              "upper": 0.9221869193570456
+            },
+            "1": {
+              "lower_numerator": 1180958855028,
+              "upper_numerator": 1180958855029,
+              "denominator": 1099511627776,
+              "lower": 1.0740758216597897,
+              "upper": 1.0740758216606991
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 1180958855028,
+            "upper_numerator": 1180958855029,
+            "denominator": 1099511627776,
+            "lower": 1.0740758216597897,
+            "upper": 1.0740758216606991
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.9578215698838903,
+            "1": 1.0995118463788458
+          },
+          "candidate_counts_before": {
+            "-1": 8250748,
+            "1": 4982690
+          },
+          "candidate_counts_after": {
+            "-1": 47690,
+            "1": 30047
+          },
+          "seconds": 61.89966319996165
+        },
+        {
+          "reciprocal_scale": 8,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 1112596544,
+            "upper_numerator": 1112596545,
+            "denominator": 1099511627776,
+            "lower": 0.0010119006619788706,
+            "upper": 0.0010119006628883653
+          },
+          "candidate_residual_upper": {
+            "-1": 0.7246193419086921,
+            "1": 0.8362882684341457
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 797839988684,
+              "upper_numerator": 797839988685,
+              "denominator": 1099511627776,
+              "lower": 0.725631242570671,
+              "upper": 0.7256312425715805
+            },
+            "1": {
+              "lower_numerator": 920621271860,
+              "upper_numerator": 920621271861,
+              "denominator": 1099511627776,
+              "lower": 0.8373001690961246,
+              "upper": 0.8373001690970341
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 920621271860,
+            "upper_numerator": 920621271861,
+            "denominator": 1099511627776,
+            "lower": 0.8373001690961246,
+            "upper": 0.8373001690970341
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.7842034715085902,
+            "1": 0.9078400668304312
+          },
+          "candidate_counts_before": {
+            "-1": 6895156,
+            "1": 5498936
+          },
+          "candidate_counts_after": {
+            "-1": 63279,
+            "1": 52985
+          },
+          "seconds": 29.68840669997735
+        },
+        {
+          "reciprocal_scale": 16,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 1783736384,
+            "upper_numerator": 1783736385,
+            "denominator": 1099511627776,
+            "lower": 0.0016222987906076014,
+            "upper": 0.001622298791517096
+          },
+          "candidate_residual_upper": {
+            "-1": 0.6186182357414509,
+            "1": 0.6636234820125537
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 681961679736,
+              "upper_numerator": 681961679737,
+              "denominator": 1099511627776,
+              "lower": 0.6202405345320585,
+              "upper": 0.620240534532968
+            },
+            "1": {
+              "lower_numerator": 731445471322,
+              "upper_numerator": 731445471323,
+              "denominator": 1099511627776,
+              "lower": 0.6652457808031613,
+              "upper": 0.6652457808040708
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 731445471322,
+            "upper_numerator": 731445471323,
+            "denominator": 1099511627776,
+            "lower": 0.6652457808031613,
+            "upper": 0.6652457808040708
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.7084272092979518,
+            "1": 0.7640175291780906
+          },
+          "candidate_counts_before": {
+            "-1": 5324872,
+            "1": 5001281
+          },
+          "candidate_counts_after": {
+            "-1": 69157,
+            "1": 72806
+          },
+          "seconds": 14.261084199999459
+        },
+        {
+          "reciprocal_scale": 32,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 3126016064,
+            "upper_numerator": 3126016065,
+            "denominator": 1099511627776,
+            "lower": 0.002843095047865063,
+            "upper": 0.0028430950487745577
+          },
+          "candidate_residual_upper": {
+            "-1": 0.5647768317903683,
+            "1": 0.6049829997818961
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 624104709716,
+              "upper_numerator": 624104709717,
+              "denominator": 1099511627776,
+              "lower": 0.5676199268382334,
+              "upper": 0.5676199268391429
+            },
+            "1": {
+              "lower_numerator": 668311858931,
+              "upper_numerator": 668311858932,
+              "denominator": 1099511627776,
+              "lower": 0.6078260948297611,
+              "upper": 0.6078260948306706
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 668311858931,
+            "upper_numerator": 668311858932,
+            "denominator": 1099511627776,
+            "lower": 0.6078260948297611,
+            "upper": 0.6078260948306706
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.6954830619833956,
+            "1": 0.7432983051912743
+          },
+          "candidate_counts_before": {
+            "-1": 3751242,
+            "1": 3705183
+          },
+          "candidate_counts_after": {
+            "-1": 67177,
+            "1": 69720
+          },
+          "seconds": 6.934759899973869
+        },
+        {
+          "reciprocal_scale": 64,
+          "grid_nodes": 65536,
+          "centers": 16384,
+          "coverage_correction": {
+            "lower_numerator": 5810575424,
+            "upper_numerator": 5810575425,
+            "denominator": 1099511627776,
+            "lower": 0.005284687562379986,
+            "upper": 0.005284687563289481
+          },
+          "candidate_residual_upper": {
+            "-1": 0.539388455074004,
+            "1": 0.5769787692725004
+          },
+          "one_sided_bounds": {
+            "-1": {
+              "lower_numerator": 598874453666,
+              "upper_numerator": 598874453667,
+              "denominator": 1099511627776,
+              "lower": 0.544673142636384,
+              "upper": 0.5446731426372935
+            },
+            "1": {
+              "lower_numerator": 640205441219,
+              "upper_numerator": 640205441220,
+              "denominator": 1099511627776,
+              "lower": 0.5822634568348803,
+              "upper": 0.5822634568357898
+            }
+          },
+          "complete_bound": {
+            "lower_numerator": 640205441219,
+            "upper_numerator": 640205441220,
+            "denominator": 1099511627776,
+            "lower": 0.5822634568348803,
+            "upper": 0.5822634568357898
+          },
+          "unfiltered_residual_upper": {
+            "-1": 0.7259102719372095,
+            "1": 0.7690436452676295
+          },
+          "candidate_counts_before": {
+            "-1": 2631935,
+            "1": 2655314
+          },
+          "candidate_counts_after": {
+            "-1": 65889,
+            "1": 68131
+          },
+          "seconds": 3.359124000009615
+        }
+      ]
+    }
+  ],
+  "complete": true
+}

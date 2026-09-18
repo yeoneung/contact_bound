@@ -1,0 +1,43 @@
+{
+  "rho_not_excess_example": {
+    "rho_at_start": 0.91,
+    "true_excess_at_start": 0
+  },
+  "missed_center_example": [
+    {
+      "critic_sign": 1,
+      "true_error": 0.1,
+      "population_formula_on_sampled_grid_bound": 0.056079671220277384,
+      "bound": 53.181079671220274,
+      "population_term": 0.0,
+      "center_correction": 53.125,
+      "zeta": 3.125,
+      "D": 0.25,
+      "P": 25.0,
+      "K0": 0.0,
+      "A0": 100.0
+    },
+    {
+      "critic_sign": -1,
+      "true_error": 0.1,
+      "population_formula_on_sampled_grid_bound": 0.05149977838635113,
+      "bound": 53.17649977838635,
+      "population_term": 0.0,
+      "center_correction": 53.125,
+      "zeta": 3.125,
+      "D": 0.25,
+      "P": 25.0,
+      "K0": 0.0,
+      "A0": 100.0
+    }
+  ],
+  "quadratic_gap_example": {
+    "actual_gap": 0.09829150571029321,
+    "old_gap_upper_bound": 0,
+    "corrected_gap_upper_bound": 0.09869604401089359,
+    "halving_h_cumulative_ratio": 0.502512541771046
+  },
+  "checks_run": 11,
+  "successful": true,
+  "scope": "Analytic examples and finite numerical regression checks; not formal verification or neural retraining."
+}
