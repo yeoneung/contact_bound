@@ -1,0 +1,15 @@
+{
+  "paths": 42,
+  "problem_inputs": 7,
+  "corrected_smaller_bound": 2,
+  "corrected_faster": 7,
+  "median_speed_ratio": 1.4498031365615944,
+  "common_fixed_input_targets": 16,
+  "corrected_faster_matched_targets": 12,
+  "matched_target_median_speed_ratio": 1.0734790835152845,
+  "complete_search_improves_top3": 9,
+  "largest_top3_ratio": 1.7068988975168977,
+  "attempts": 1008,
+  "exclusions": 672,
+  "failures": 0
+}

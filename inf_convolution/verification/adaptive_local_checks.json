@@ -1,0 +1,23 @@
+{
+  "local": {
+    "selected_reconstructions_replayed": 118,
+    "distinct_inputs": 40,
+    "independent_tapered_jets": 29,
+    "fixed_runs": 216,
+    "target_runs": 324,
+    "source_sha256": {
+      "adaptive_local.py": "815061017da586de480105ad623fdaebfe5cb603a1e79de3d717cb06bb2a2e71",
+      "benchmark_adaptive_local.py": "ee95247136dd2d4f3f9407113026cc158b45affd389d945fd7824b0ba29fa744",
+      "asymmetric_input.py": "3328802b8b057263de0321518005ad11e67728cd7e8b18f0272fe2f0af1fb987",
+      "automatic_branches.py": "8b5b2ec4b4806668e6bda77548736a04a80d0db63feda793cd6ab806c2b7a454",
+      "certify_automatic_branches.py": "f4644ebec9bea696be8c8ea7b2837e86a8cf15e2447dea1a5ff67804494219bd",
+      "direct_branch_polynomials.py": "ad7e1d6543df11b54e46d4e77881e967049084ca7f4274cbbf915687bab0b988",
+      "benchmark_automatic_branches.py": "ca7bba5684baceaf98cde856aacd7e89c10e320c4b5f3ec6dee23a7925a94e8a",
+      "interval_utils.py": "86eed33b45b50c91900fdb41eeb5ab2c83b13625d3ed3e58816797b5fe66d692",
+      "robustness_design.py": "a343094a08a1a829cf30f5259a0fc7aefa5f9dc0de28cb1e9c56d73ab47f5cbc"
+    },
+    "data_sha256": "6c5004572d706a73f280c07fbbf9b1dd6e7f57fb01d72d154156cfbd2bd15c92"
+  },
+  "status": "PASS",
+  "scope": "Exact saved-certificate replay, coefficient identities and independent point checks. Point checks supplement the mathematical proof; they do not replace whole-domain verification."
+}

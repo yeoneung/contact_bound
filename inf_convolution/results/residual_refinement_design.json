@@ -1,0 +1,155 @@
+{
+  "development_cases": [
+    "variable_l1",
+    "anisotropic_l2",
+    "curved_l2"
+  ],
+  "prospective_cases": {
+    "holdout_a": [
+      [
+        1.1,
+        0.2,
+        -0.15,
+        0.1,
+        0,
+        0
+      ],
+      [
+        0.75,
+        -0.1,
+        0.15,
+        -0.1,
+        0,
+        0.1
+      ],
+      [
+        1,
+        0.1,
+        -0.2,
+        0.2,
+        0.1,
+        0
+      ]
+    ],
+    "holdout_b": [
+      [
+        0.7,
+        -0.15,
+        0.1,
+        -0.1,
+        0.1,
+        0
+      ],
+      [
+        1.4,
+        0.2,
+        -0.15,
+        0.1,
+        0,
+        0
+      ],
+      [
+        1,
+        -0.2,
+        0.15,
+        -0.15,
+        0,
+        0.15
+      ]
+    ],
+    "holdout_c": [
+      [
+        1.2,
+        0,
+        0.2,
+        -0.2,
+        0,
+        0.15
+      ],
+      [
+        0.9,
+        -0.15,
+        0,
+        0.15,
+        0.1,
+        0
+      ],
+      [
+        1,
+        0.15,
+        0.2,
+        -0.2,
+        0.1,
+        0.1
+      ]
+    ],
+    "holdout_d": [
+      [
+        0.85,
+        0.1,
+        0.15,
+        0.15,
+        0.1,
+        0
+      ],
+      [
+        1.15,
+        -0.2,
+        -0.1,
+        -0.1,
+        0,
+        0.1
+      ],
+      [
+        1,
+        -0.15,
+        -0.1,
+        0.25,
+        0.15,
+        0.1
+      ]
+    ]
+  },
+  "methods": [
+    "polynomial",
+    "refined_polynomial",
+    "refined_corrected"
+  ],
+  "targets": [
+    0.12,
+    0.08,
+    0.04
+  ],
+  "grids": [
+    17,
+    33,
+    65
+  ],
+  "degrees": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "scales": [
+    0.5,
+    1,
+    2
+  ],
+  "verified_candidates": 3,
+  "repetitions": 3,
+  "precision": 192,
+  "box_budget": 16000,
+  "max_depth": 12,
+  "refinement": {
+    "iterations": 8,
+    "training_n": 21,
+    "validation_n": 81,
+    "near_active_margin": 0.02,
+    "exchange_points": 24
+  },
+  "certificate": "Input error D+max(R,boundary), with all branches and boxes rigorously checked; samples only propose coefficients.",
+  "timing": "Sequential cyclic order. Every solve, fit, failed attempt, refinement and verification included. A target stops at its first verified success; tighter targets continue along exactly the same path.",
+  "comparison": "The polynomial control receives the same priority verifier and proposal budget. Refined polynomial is an equally optimized control for contact initialization.",
+  "scope": "Four prescribed boundary-associated polynomial branches in two dimensions. Four additional coefficient problems fixed prospectively after the three-case pilot. No claim of general HJB superiority."
+}

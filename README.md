@@ -100,3 +100,7 @@ python code/run_experiment.py e15_potential
 ```
 
 Their outputs go to `runs/reproduction/`; the runner copies the supplied diagnostic checkpoints there as needed. `e5_diag` rebuilds the fixed navigation critics. The saved ten-seed training run contains aggregate results and plots, rather than all trained weights. A single-mode `e7_policy_bound obstacle` run writes `e7_policy_bound_obstacle.json`; the saved combined run is `e7_policy_bound.json`.
+
+## Inf-convolution and branch reconstruction
+
+The [inf_convolution](inf_convolution/) directory adds self-contained experiments and interval checks for corrected inf-convolutions, asymmetric inputs, residual refinement, and multidimensional branch fits. Its saved source and numerical records have separate reproduction instructions.

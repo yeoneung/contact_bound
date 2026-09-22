@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "benchmark_sha256": "c94c6f76ebd4dcd4b4608a2fc4493b9501a930431e810f4840c0bff64beda82a",
+  "replayed_searches": 18,
+  "timing_repetitions_checked": 54,
+  "unique_attempts": 237,
+  "certificates_replayed": 20,
+  "target_exclusions_replayed": 207,
+  "geometry_failures_replayed": 10,
+  "independent_jet_points": 12,
+  "independent_global_contact_points": 27,
+  "independent_precision_digits": 75,
+  "independent_node_solvers": 3,
+  "junctions_replayed": 1
+}

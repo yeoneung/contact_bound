@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "selection_sha256": "888219952fd7cd745c5cb435ac1db7e5dd846fdc1fbe6342d77082e24ab872ff",
+  "auxiliary_certificates_replayed": 3,
+  "reference": "Preserved additional PDE approximation, with certified viscosity sub- and supersolutions; read after the new selection is frozen.",
+  "records": [
+    {
+      "n": 32,
+      "selected_exponent": 5,
+      "error_lower": {
+        "numerator": 116702029831010749035258576896,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.09206166889362066
+      },
+      "error_upper": {
+        "numerator": 116702962265500971859605192704,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.09206240445473668
+      },
+      "effectivity_upper": {
+        "numerator": 2590417343830076851140296236252,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 2.0434789707540033
+      },
+      "uncorrected": {
+        "residual_lower": {
+          "numerator": 139163390142097736654789249032,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.10978055792112006
+        },
+        "distance_lower": {
+          "numerator": 111520476978122080255589657336,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.0879741444196404
+        },
+        "bound_lower": {
+          "numerator": 250683867120219816910378906368,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.19775470234076045
+        },
+        "valid_points": 2209,
+        "point_grid_side": 49
+      }
+    },
+    {
+      "n": 64,
+      "selected_exponent": 5,
+      "error_lower": {
+        "numerator": 57397398448149676417481703424,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.04527856369713845
+      },
+      "error_upper": {
+        "numerator": 57398031460854702311420723200,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.045279063056113955
+      },
+      "effectivity_upper": {
+        "numerator": 2394152545018705421695120272953,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 1.8886533439006452
+      },
+      "uncorrected": {
+        "residual_lower": {
+          "numerator": 239620587670955406071277093410,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.18902731369970072
+        },
+        "distance_lower": {
+          "numerator": 112033284571202563053623600680,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.08837867828172206
+        },
+        "bound_lower": {
+          "numerator": 351653872242157969124900694091,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.2774059919814228
+        },
+        "valid_points": 2209,
+        "point_grid_side": 49
+      }
+    }
+  ]
+}

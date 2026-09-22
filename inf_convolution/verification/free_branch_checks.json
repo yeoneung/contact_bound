@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "data_sha256": "a6bef36a0b46e7c68a831397446099d3c27209fda3ecd4310d3b317c6465d74c",
+  "bernstein_polynomial_points": 36,
+  "C1_identities": 449024,
+  "covered_leaves": 26772,
+  "independent_points": 410,
+  "replayed_certificates": 6,
+  "selection_decisions": 6,
+  "scope": "All method selections; each selected certificate fully replayed over exact covering partitions including cut cells and boundary patches; exact C1 interfaces; independent 80-digit polynomial/Bernstein and pointwise PDE checks. Point checks supplement, rather than replace, the domain certificates."
+}

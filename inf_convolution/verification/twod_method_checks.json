@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "comparison_sha256": "b204d4d118e70377731b86f3707472e37cde6aae78c888fea76c7a328896f2d3",
+  "certificates_replayed": 33,
+  "uncertified_candidates_replayed": 1,
+  "numerical_inputs_recomputed": 2,
+  "reference_intervals_replayed": 2,
+  "independent_precision_digits": 70,
+  "independent_formula_points": 12,
+  "common_relative_tolerance": [
+    1,
+    100
+  ],
+  "method_selections_replayed": 6,
+  "records": [
+    {
+      "n": 32,
+      "error_lower": {
+        "numerator": 116702029831010749035258576896,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.09206166889362066
+      },
+      "error_upper": {
+        "numerator": 116702962265500971859605192704,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.09206240445473668
+      },
+      "methods": [
+        {
+          "method": "direct",
+          "selected_exponent": null,
+          "error_upper": {
+            "numerator": 251919057514491145253597552639,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 0.19872909575330563
+          },
+          "effectivity_upper": {
+            "numerator": 2736416366789845016826451030345,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 2.1586518921674296
+          }
+        },
+        {
+          "method": "uncorrected",
+          "selected_exponent": 8,
+          "error_upper": {
+            "numerator": 218744079138922464753718081271,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 0.17255865228126702
+          },
+          "effectivity_upper": {
+            "numerator": 2376060327471210492634544682587,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 1.8743811007886728
+          }
+        },
+        {
+          "method": "corrected",
+          "selected_exponent": 5,
+          "error_upper": {
+            "numerator": 229820035460443598261162630270,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 0.18129604121125056
+          },
+          "effectivity_upper": {
+            "numerator": 2496370511444951519751290772517,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 1.9692891014255047
+          }
+        }
+      ]
+    },
+    {
+      "n": 64,
+      "error_lower": {
+        "numerator": 57397398448149676417481703424,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.04527856369713845
+      },
+      "error_upper": {
+        "numerator": 57398031460854702311420723200,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.045279063056113955
+      },
+      "methods": [
+        {
+          "method": "direct",
+          "selected_exponent": null,
+          "error_upper": {
+            "numerator": 124538306082996065383744491365,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 0.09824340087132372
+          },
+          "effectivity_upper": {
+            "numerator": 2750491533168193871152994277793,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 2.16975524065779
+          }
+        },
+        {
+          "method": "uncorrected",
+          "selected_exponent": 9,
+          "error_upper": {
+            "numerator": 107794075200501216770920307385,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 0.0850345317401292
+          },
+          "effectivity_upper": {
+            "numerator": 2380686717925057904519939422598,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 1.8780306793500008
+          }
+        },
+        {
+          "method": "corrected",
+          "selected_exponent": 5,
+          "error_upper": {
+            "numerator": 104275149014136694416146329109,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 0.08225858844334777
+          },
+          "effectivity_upper": {
+            "numerator": 2302969451761270247877125061464,
+            "denominator": 1267650600228229401496703205376,
+            "decimal": 1.8167225664127329
+          }
+        }
+      ]
+    }
+  ]
+}

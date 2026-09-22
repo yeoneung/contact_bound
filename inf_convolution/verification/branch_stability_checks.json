@@ -1,0 +1,205 @@
+{
+  "status": "PASS",
+  "precision_bits": 192,
+  "independent_precision_digits": 80,
+  "independent_branch_points": 42,
+  "independent_junctions": 3,
+  "meaning": "Interval bounds verify the hypotheses and constants. Pointwise inverse differentiation and root comparisons are auxiliary checks of the analytic stability estimate.",
+  "records": [
+    {
+      "delta": [
+        1,
+        256
+      ],
+      "epsilon": [
+        1,
+        16
+      ],
+      "alpha_upper": [
+        {
+          "numerator": 79566610276187546608205824,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 6.276698820784077e-05
+        },
+        {
+          "numerator": 1266914524669396604717891584,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.000999419338768348
+        },
+        {
+          "numerator": 40535290465764199506779308032,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.031976705930219396
+        }
+      ],
+      "L_upper": {
+        "numerator": 3211586157329591005814642237838,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 2.533494763266292
+      },
+      "M_upper": {
+        "numerator": 2954747675383775364348463920989,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 2.330884925902925
+      },
+      "jacobian_lower": {
+        "numerator": 1082978870516311095660696642698,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.8543196921307261
+      },
+      "eta0_upper": {
+        "numerator": 39214773690167045446673528641,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.03093500187126229
+      },
+      "eta1_upper": {
+        "numerator": 92234167736235724868103404485,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.07275992905271356
+      },
+      "slope_separation_lower": {
+        "numerator": 4931432184267413892663349046968,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 3.8902140569172237
+      },
+      "junction_shift_upper": {
+        "numerator": 20160727978677118604774869699,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.01590401012317381
+      },
+      "independent_observed_value_error": "0.0275253485029663884321558611358",
+      "independent_observed_derivative_error": "0.0647504353399989734491489145907",
+      "independent_junction_displacement": "0.00211378942740363103828522058423"
+    },
+    {
+      "delta": [
+        1,
+        4096
+      ],
+      "epsilon": [
+        1,
+        64
+      ],
+      "alpha_upper": [
+        {
+          "numerator": 1238942991174597263491072,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 9.773536895352208e-07
+        },
+        {
+          "numerator": 79227536421970643102203904,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 6.249950610026644e-05
+        },
+        {
+          "numerator": 10145844365012249139856015360,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.008003659970015065
+        }
+      ],
+      "L_upper": {
+        "numerator": 2664554329051026804787720304740,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 2.101962740025759
+      },
+      "M_upper": {
+        "numerator": 2882977900889517842924384925533,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 2.2742685566278773
+      },
+      "jacobian_lower": {
+        "numerator": 1222604070526758627606971762978,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.9644645538026325
+      },
+      "eta0_upper": {
+        "numerator": 1678883152751734919979449136,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.00132440528364004
+      },
+      "eta1_upper": {
+        "numerator": 4106242182041927527919729935,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.0032392539247822977
+      },
+      "slope_separation_lower": {
+        "numerator": 4949258521043416251062185324216,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 3.9042765570831155
+      },
+      "junction_shift_upper": {
+        "numerator": 860022658848751392451440916,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.0006784382531700075
+      },
+      "independent_observed_value_error": "0.00120053966031967278425489917224",
+      "independent_observed_derivative_error": "0.00288945249787441324290332984484",
+      "independent_junction_displacement": "0.0000827222718134678511780203292355"
+    },
+    {
+      "delta": [
+        1,
+        65536
+      ],
+      "epsilon": [
+        1,
+        256
+      ],
+      "alpha_upper": [
+        {
+          "numerator": 19340941590654567317504,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 1.5257312691030478e-08
+        },
+        {
+          "numerator": 4951734694798034263343104,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 3.906229913752668e-06
+        },
+        {
+          "numerator": 2536522761789392691908313088,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.002000963641978881
+        }
+      ],
+      "L_upper": {
+        "numerator": 2529920458174388462087900319257,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 1.995755342772605
+      },
+      "M_upper": {
+        "numerator": 2866610657714197141882749695837,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 2.2613570783606214
+      },
+      "jacobian_lower": {
+        "numerator": 1256452902346461261317185786440,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.991166573912597
+      },
+      "eta0_upper": {
+        "numerator": 94435847741798283042630017,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 7.449674833490863e-05
+      },
+      "eta1_upper": {
+        "numerator": 235450288258491484733928405,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.00018573752753014175
+      },
+      "slope_separation_lower": {
+        "numerator": 4953715105237416840661894393528,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 3.9077921821245885
+      },
+      "junction_shift_upper": {
+        "numerator": 48332072608045089261257589,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 3.812728254879012e-05
+      },
+      "independent_observed_value_error": "0.0000679692698389178656370265309149",
+      "independent_observed_derivative_error": "0.000171024784699951683347011051424",
+      "independent_junction_displacement": "0.00000463632803986239866934958974164"
+    }
+  ]
+}

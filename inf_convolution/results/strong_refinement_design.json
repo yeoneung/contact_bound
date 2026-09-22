@@ -1,0 +1,37 @@
+{
+  "cases": [
+    "variable_l1",
+    "anisotropic_l2",
+    "curved_l2",
+    "holdout_a",
+    "holdout_b",
+    "holdout_c",
+    "holdout_d"
+  ],
+  "grids": [
+    33
+  ],
+  "repetitions": 3,
+  "kinds": [
+    "polynomial",
+    "corrected"
+  ],
+  "degrees": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "scales": [
+    0.5,
+    1,
+    2
+  ],
+  "starts": 2,
+  "precision": 192,
+  "box_budget": 16000,
+  "ranking": "All 24 successful degree-scale-start candidates are refined before ranking.",
+  "search": "Complete finite search; exclusion only by a rigorous lower bound exceeding the incumbent upper certificate.",
+  "timing": "Sequential alternating method order. Input generation, every fit and refinement, all lower checks and interval verification included.",
+  "scope": "Existing development cases. Fixed-input comparisons and first target success at that input; not a new adaptive-grid timing study."
+}

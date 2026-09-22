@@ -1,0 +1,38 @@
+{
+  "cases": [
+    "variable_l1",
+    "anisotropic_l2",
+    "curved_l2"
+  ],
+  "grids": [
+    33,
+    65
+  ],
+  "methods": [
+    "polynomial",
+    "uncorrected",
+    "corrected"
+  ],
+  "degrees": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "scales": [
+    0.5,
+    1,
+    2
+  ],
+  "repetitions": 3,
+  "precision": 192,
+  "verified_candidates": 3,
+  "box_budget": 16000,
+  "max_depth": 12,
+  "interface_information": "No exact solution, interface coordinates or reflection axes supplied. Four boundary-associated branches; their meeting curves are determined by their fitted values.",
+  "guarantee": "Continuous PDE error of the exact C1 numerical input: distance + max(branch residual, boundary discrepancy). Every remaining box contributes a rigorous upper enclosure.",
+  "tolerance": "5 percent plus 1e-6 is a subdivision stopping guide. Budget/depth-limited boxes retain their possibly wider rigorous upper bounds; this is not a guaranteed 5 percent supremum approximation.",
+  "comparison": "All methods have the same polynomial degrees, retention scales, extrapolation constraints, sample ranking and three-candidate verification budget.",
+  "development": "Three development problems; design frozen after pilot fits. Not a blinded generalization study. Degree seven was unstable in pilot extrapolation and is not in the final candidate list.",
+  "timing": "Sequential cyclic method order; includes input solve, every proposal fit and all three interval verifications."
+}

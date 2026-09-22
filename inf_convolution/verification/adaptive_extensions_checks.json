@@ -1,0 +1,2899 @@
+{
+  "local": {
+    "selected_reconstructions_replayed": 118,
+    "distinct_inputs": 40,
+    "independent_tapered_jets": 29,
+    "fixed_runs": 216,
+    "target_runs": 324,
+    "source_sha256": {
+      "adaptive_local.py": "815061017da586de480105ad623fdaebfe5cb603a1e79de3d717cb06bb2a2e71",
+      "benchmark_adaptive_local.py": "ee95247136dd2d4f3f9407113026cc158b45affd389d945fd7824b0ba29fa744",
+      "asymmetric_input.py": "3328802b8b057263de0321518005ad11e67728cd7e8b18f0272fe2f0af1fb987",
+      "automatic_branches.py": "8b5b2ec4b4806668e6bda77548736a04a80d0db63feda793cd6ab806c2b7a454",
+      "certify_automatic_branches.py": "f4644ebec9bea696be8c8ea7b2837e86a8cf15e2447dea1a5ff67804494219bd",
+      "direct_branch_polynomials.py": "ad7e1d6543df11b54e46d4e77881e967049084ca7f4274cbbf915687bab0b988",
+      "benchmark_automatic_branches.py": "ca7bba5684baceaf98cde856aacd7e89c10e320c4b5f3ec6dee23a7925a94e8a",
+      "interval_utils.py": "86eed33b45b50c91900fdb41eeb5ab2c83b13625d3ed3e58816797b5fe66d692",
+      "robustness_design.py": "a343094a08a1a829cf30f5259a0fc7aefa5f9dc0de28cb1e9c56d73ab47f5cbc"
+    },
+    "data_sha256": "6c5004572d706a73f280c07fbbf9b1dd6e7f57fb01d72d154156cfbd2bd15c92"
+  },
+  "twod": {
+    "candidate_certificates_replayed": 54,
+    "distinct_inputs": 6,
+    "exact_C1_coefficient_identities": 60288,
+    "independent_80_digit_points": 216,
+    "junction_crossings": [
+      {
+        "case": "variable_l1",
+        "n": 33,
+        "method": "polynomial",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-17/25",
+              "-67/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "3/5",
+              "61/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-53/100",
+              "-13/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "43/100",
+              "11/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-37/100",
+              "-9/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "3/10",
+              "31/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "-9/50",
+              "-17/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "19/100",
+              "1/5"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-19/100",
+              "-9/50"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "17/100",
+              "9/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-43/100",
+              "-21/50"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "33/100",
+              "17/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-61/100",
+              "-3/5"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "variable_l1",
+        "n": 33,
+        "method": "uncorrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-17/25",
+              "-67/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "31/50",
+              "63/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-13/25",
+              "-51/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "11/25",
+              "9/20"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-19/50",
+              "-37/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "3/10",
+              "31/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "-4/25",
+              "-3/20"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/50",
+              "19/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-3/20",
+              "-7/50"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "17/100",
+              "9/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-41/100",
+              "-2/5"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "17/50",
+              "7/20"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-61/100",
+              "-3/5"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "13/25",
+              "53/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "variable_l1",
+        "n": 33,
+        "method": "corrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-13/20",
+              "-16/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "3/5",
+              "61/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-12/25",
+              "-47/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "41/100",
+              "21/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-17/50",
+              "-33/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "29/100",
+              "3/10"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "-3/20",
+              "-7/50"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "19/100",
+              "1/5"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-3/25",
+              "-11/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "4/25",
+              "17/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-12/25",
+              "-47/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "8/25",
+              "33/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-31/50",
+              "-61/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "12/25",
+              "49/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "variable_l1",
+        "n": 65,
+        "method": "polynomial",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-17/25",
+              "-67/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "61/100",
+              "31/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-51/100",
+              "-1/2"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "11/25",
+              "9/20"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-7/20",
+              "-17/50"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "31/100",
+              "8/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "-4/25",
+              "-3/20"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "19/100",
+              "1/5"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-7/50",
+              "-13/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "17/100",
+              "9/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-21/50",
+              "-41/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "7/20",
+              "9/25"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-31/50",
+              "-61/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "variable_l1",
+        "n": 65,
+        "method": "uncorrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-67/100",
+              "-33/50"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "31/50",
+              "63/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-51/100",
+              "-1/2"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "9/20",
+              "23/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-17/50",
+              "-33/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "3/10",
+              "31/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "-3/20",
+              "-7/50"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "19/100",
+              "1/5"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-7/50",
+              "-13/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "9/50",
+              "19/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-2/5",
+              "-39/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "7/20",
+              "9/25"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-3/5",
+              "-59/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "27/50",
+              "11/20"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "variable_l1",
+        "n": 65,
+        "method": "corrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-67/100",
+              "-33/50"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "3/5",
+              "61/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-1/2",
+              "-49/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "11/25",
+              "9/20"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-33/100",
+              "-8/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "3/10",
+              "31/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "-7/50",
+              "-13/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/50",
+              "19/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-17/100",
+              "-4/25"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "17/100",
+              "9/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-11/25",
+              "-43/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "7/20",
+              "9/25"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-31/50",
+              "-61/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "27/50",
+              "11/20"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "anisotropic_l2",
+        "n": 33,
+        "method": "polynomial",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-8/25",
+              "-31/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "51/100",
+              "13/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "0",
+              "1/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "4/25",
+              "17/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "2/25",
+              "9/100"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/100",
+              "1/10"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "1/10",
+              "11/100"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-1/4",
+              "-6/25"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "7/20",
+              "9/25"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "anisotropic_l2",
+        "n": 33,
+        "method": "uncorrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-31/100",
+              "-3/10"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "51/100",
+              "13/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "0",
+              "1/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "17/100",
+              "9/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "2/25",
+              "9/100"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/100",
+              "1/10"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "1/10",
+              "11/100"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "1/10",
+              "11/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "3/25",
+              "13/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-1/4",
+              "-6/25"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "9/25",
+              "37/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "anisotropic_l2",
+        "n": 33,
+        "method": "corrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-3/10",
+              "-29/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "51/100",
+              "13/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-1/50",
+              "-1/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "4/25",
+              "17/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "7/100",
+              "2/25"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/100",
+              "1/10"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "1/10",
+              "11/100"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "7/100",
+              "2/25"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "7/50",
+              "3/20"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-1/4",
+              "-6/25"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "7/20",
+              "9/25"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "anisotropic_l2",
+        "n": 65,
+        "method": "polynomial",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-31/100",
+              "-3/10"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "51/100",
+              "13/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "0",
+              "1/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "4/25",
+              "17/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "2/25",
+              "9/100"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/100",
+              "1/10"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "1/10",
+              "11/100"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-6/25",
+              "-23/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "7/20",
+              "9/25"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "anisotropic_l2",
+        "n": 65,
+        "method": "uncorrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-3/10",
+              "-29/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "1/2",
+              "51/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "0",
+              "1/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "4/25",
+              "17/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "2/25",
+              "9/100"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/100",
+              "1/10"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "11/100",
+              "3/25"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-6/25",
+              "-23/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "9/25",
+              "37/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "anisotropic_l2",
+        "n": 65,
+        "method": "corrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-31/100",
+              "-3/10"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "13/25",
+              "53/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "0",
+              "1/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "3/20",
+              "4/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "2/25",
+              "9/100"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/100",
+              "1/10"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "11/100",
+              "3/25"
+            ],
+            "branches": [
+              0,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "11/100",
+              "3/25"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "13/100",
+              "7/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-13/50",
+              "-1/4"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "9/25",
+              "37/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "curved_l2",
+        "n": 33,
+        "method": "polynomial",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-13/25",
+              "-51/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "7/10",
+              "71/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-8/25",
+              "-31/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "13/25",
+              "53/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-13/100",
+              "-3/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "17/50",
+              "7/20"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "3/50",
+              "7/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/50",
+              "19/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-13/100",
+              "-3/25"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "21/100",
+              "11/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-11/25",
+              "-43/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "9/25",
+              "37/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-17/25",
+              "-67/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "27/50",
+              "11/20"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "curved_l2",
+        "n": 33,
+        "method": "uncorrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-53/100",
+              "-13/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "7/10",
+              "71/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-33/100",
+              "-8/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "13/25",
+              "53/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-7/50",
+              "-13/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "17/50",
+              "7/20"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "3/50",
+              "7/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "17/100",
+              "9/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-9/100",
+              "-2/25"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "21/100",
+              "11/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-43/100",
+              "-21/50"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "9/25",
+              "37/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-17/25",
+              "-67/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "curved_l2",
+        "n": 33,
+        "method": "corrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-51/100",
+              "-1/2"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "71/100",
+              "18/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-31/100",
+              "-3/10"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-13/100",
+              "-3/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "33/100",
+              "17/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "3/50",
+              "7/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/50",
+              "19/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-1/10",
+              "-9/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "23/100",
+              "6/25"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-11/25",
+              "-43/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "9/25",
+              "37/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-17/25",
+              "-67/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "13/25",
+              "53/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "curved_l2",
+        "n": 65,
+        "method": "polynomial",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-13/25",
+              "-51/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "7/10",
+              "71/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-8/25",
+              "-31/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-3/25",
+              "-11/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "7/20",
+              "9/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "7/100",
+              "2/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "19/100",
+              "1/5"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-11/100",
+              "-1/10"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "21/100",
+              "11/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-11/25",
+              "-43/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "9/25",
+              "37/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-17/25",
+              "-67/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "curved_l2",
+        "n": 65,
+        "method": "uncorrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-13/25",
+              "-51/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "7/10",
+              "71/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-8/25",
+              "-31/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-13/100",
+              "-3/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "7/20",
+              "9/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "3/50",
+              "7/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "9/50",
+              "19/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-9/100",
+              "-2/25"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "11/50",
+              "23/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-43/100",
+              "-21/50"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "9/25",
+              "37/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-17/25",
+              "-67/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      },
+      {
+        "case": "curved_l2",
+        "n": 65,
+        "method": "corrected",
+        "proofs": [
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "-13/25",
+              "-51/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-3/5",
+            "x_interval": [
+              "7/10",
+              "71/100"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "-8/25",
+              "-31/100"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-2/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "-13/100",
+              "-3/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "-1/5",
+            "x_interval": [
+              "7/20",
+              "9/25"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "7/100",
+              "2/25"
+            ],
+            "branches": [
+              0,
+              2
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "0",
+            "x_interval": [
+              "19/100",
+              "1/5"
+            ],
+            "branches": [
+              2,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "-1/10",
+              "-9/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "1/5",
+            "x_interval": [
+              "11/50",
+              "23/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "-11/25",
+              "-43/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "2/5",
+            "x_interval": [
+              "9/25",
+              "37/100"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "-17/25",
+              "-67/100"
+            ],
+            "branches": [
+              0,
+              3
+            ],
+            "positive_transverse_derivative": true
+          },
+          {
+            "y": "3/5",
+            "x_interval": [
+              "53/100",
+              "27/50"
+            ],
+            "branches": [
+              3,
+              1
+            ],
+            "positive_transverse_derivative": true
+          }
+        ]
+      }
+    ],
+    "source_sha256": {
+      "unknown_junction_2d.py": "7103f7fa681310aab61c3afb328027b45c1a3375bdc3393b4757a0a9c72bbf2c",
+      "benchmark_unknown_junction_2d.py": "6c8367b3685930c49073fb067931ec04841280c6088cae90636dea68e6089954",
+      "interval_utils.py": "86eed33b45b50c91900fdb41eeb5ab2c83b13625d3ed3e58816797b5fe66d692"
+    },
+    "data_sha256": "4a99e3a56185695279f2574884379b447d82a7871e41a47aa7d0f6d58c6b161a"
+  },
+  "status": "PASS",
+  "scope": "Assembly of separately completed replay and independent-check reports, with current data and source hashes revalidated."
+}

@@ -1,0 +1,4 @@
+method,baseline,successful_pairs,faster,median_speedup
+adaptive_polynomial,global_polynomial,36,32,1.44224996381188
+adaptive_hybrid,global_polynomial,36,23,1.157546609372985
+adaptive_hybrid,adaptive_polynomial,36,0,0.8092104631695013

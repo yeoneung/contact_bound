@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "data_sha256": "5ef3017163afa0f6508ff67a8d83c80efac6129ad5df61eded730a15395f07ac",
+  "source_sha256": {
+    "unknown_junction_2d.py": "7103f7fa681310aab61c3afb328027b45c1a3375bdc3393b4757a0a9c72bbf2c",
+    "interval_utils.py": "86eed33b45b50c91900fdb41eeb5ab2c83b13625d3ed3e58816797b5fe66d692",
+    "residual_refinement_2d.py": "316b18b5684bd511a53ab0cb8345a91542c25459ac5c3721a13b9834a7a139ac",
+    "residual_refinement_design.py": "669d79f8115ee10348b0cbcbf1c715ec3180718dc0518e8c8b9d8515ed511e50",
+    "benchmark_residual_refinement.py": "3a9e5bbbdae65c1711e6db948a92db8b7ea9a3c5434269828ea54bd15e70d312"
+  },
+  "replayed": 48,
+  "point_checks": 576,
+  "C1_identities": 146432,
+  "coverage_leaves": 296308,
+  "target_decisions": 189,
+  "independent_basis_jets": 32,
+  "distinct_inputs": 20,
+  "scope": "All target decisions, unique first-success certificates and best available unsuccessful-path certificates. Exact dyadic box partition coverage, Hermite continuity and assigned boundary identities, plus independent 80-digit point checks."
+}

@@ -1,0 +1,40 @@
+{
+  "target_comparisons": [
+    {
+      "method": "adaptive_polynomial",
+      "baseline": "global_polynomial",
+      "successful_pairs": 36,
+      "faster": 32,
+      "median_speedup": 1.44224996381188
+    },
+    {
+      "method": "adaptive_hybrid",
+      "baseline": "global_polynomial",
+      "successful_pairs": 36,
+      "faster": 23,
+      "median_speedup": 1.157546609372985
+    },
+    {
+      "method": "adaptive_hybrid",
+      "baseline": "adaptive_polynomial",
+      "successful_pairs": 36,
+      "faster": 0,
+      "median_speedup": 0.8092104631695013
+    }
+  ],
+  "local_fixed": {
+    "inputs": 24,
+    "hybrid_certified": 24,
+    "polynomial_certified": 24,
+    "hybrid_smaller_than_adaptive_polynomial": 2,
+    "hybrid_equal_to_adaptive_polynomial": 21,
+    "corrected_patches": 7
+  },
+  "twod": {
+    "inputs": 6,
+    "certified_runs": 54,
+    "total_runs": 54,
+    "corrected_smaller_than_polynomial": 0,
+    "corrected_smaller_than_uncorrected": 3
+  }
+}

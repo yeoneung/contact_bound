@@ -1,0 +1,38 @@
+{
+  "cases": [
+    "frequency_1_asym_0.15_ripple_0",
+    "frequency_1_asym_0.15_ripple_0.12",
+    "frequency_1_asym_0.35_ripple_0",
+    "frequency_1_asym_0.35_ripple_0.12",
+    "frequency_2_asym_0.15_ripple_0",
+    "frequency_2_asym_0.15_ripple_0.12",
+    "frequency_2_asym_0.35_ripple_0",
+    "frequency_2_asym_0.35_ripple_0.12",
+    "frequency_4_asym_0.15_ripple_0",
+    "frequency_4_asym_0.15_ripple_0.12",
+    "frequency_4_asym_0.35_ripple_0",
+    "frequency_4_asym_0.35_ripple_0.12"
+  ],
+  "fixed_grids": [
+    256,
+    1024
+  ],
+  "targets": [
+    ".04",
+    ".02",
+    ".01"
+  ],
+  "methods": [
+    "global_polynomial",
+    "adaptive_polynomial",
+    "adaptive_hybrid"
+  ],
+  "repetitions": 3,
+  "max_n": 8192,
+  "precision": 192,
+  "timing": "Sequential cyclic method order. Target time includes input solves, proposals, failed attempts and preceding grids.",
+  "development": "Design fixed after exploratory skew and two-dimensional pilot runs; these are development benchmarks, not blinded validation.",
+  "input_refinement": "Uniform input-grid doubling; local adaptive reconstruction and interval subdivision. No claim of nonuniform input-mesh refinement.",
+  "fallback": "If all three initial hybrid candidates fail on a patch, try the polynomial control candidates not yet checked, up to its first three. All fallback work is timed and recorded.",
+  "fairness": "The polynomial control has the same local patch selection and interval cache as the hybrid. Global polynomial uses its existing 30-candidate ranking, checks at most three candidates, rejects by rigorous target lower bounds, and stops immediately once the target is certified. Local methods also reject regions by rigorous target lower bounds."
+}

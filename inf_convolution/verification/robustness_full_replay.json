@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "comparison_sha256": "d68e74b43a197cb068980462ba6516cc295e6ec9f41e5cf3d96b9b0c8ef4d433",
+  "design_sha256": "c7004f7346ed0424227e5abf7703af690a25aadbd71945eae9063b4e17838d55",
+  "searches": 136,
+  "candidate_statuses": {
+    "certified": 399,
+    "above_target": 4706,
+    "not_certified": 410
+  },
+  "replay_mode": "all_candidates",
+  "certificates_or_attempts_replayed": 5515,
+  "policy_choices_checked": 81,
+  "independent_jet_points": 48,
+  "independent_global_contact_points": 108,
+  "independent_node_solvers": 12
+}

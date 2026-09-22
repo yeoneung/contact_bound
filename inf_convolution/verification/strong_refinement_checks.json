@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "data_sha256": "b7ea1e1879ef51a5570756d1ab7594d6edb188a0c2f0688109e2a9b675dbfc73",
+  "paths": 42,
+  "selected_certificates_replayed": 31,
+  "exclusions_replayed": 672,
+  "C1_identities": 27776,
+  "independent_points": 372,
+  "coverage_leaves": 233299,
+  "target_decisions": 126,
+  "unique_lower_checks": 329,
+  "scope": "All saved lower bounds and exclusion/selection/target decisions; unique selected and first-target certificates replayed with full domain coverage; all input C1 identities and supplementary independent point checks."
+}

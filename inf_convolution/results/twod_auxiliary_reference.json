@@ -1,0 +1,510 @@
+{
+  "source_sha256": "8bfcc555748c032633f2855a90a2b3c31166b1d4421553c50181751d074d0f95",
+  "auxiliary_functions": [
+    {
+      "polynomial": {
+        "dimension": 2,
+        "order": 4,
+        "denominator_bits": 48,
+        "numerators": [
+          300485242081256,
+          150963935551804,
+          -11121571422339,
+          479890898720,
+          -16351517849,
+          150963935551804,
+          33163229761750,
+          -10345806773594,
+          994030797406,
+          -45580661802,
+          -11121571422339,
+          -10345806773594,
+          3227146556355,
+          -310850486425,
+          14828892662,
+          479890898720,
+          994030797406,
+          -310850486425,
+          30192642448,
+          -1678863840,
+          -16351517849,
+          -45580661802,
+          14828892662,
+          -1678863840,
+          305955778
+        ],
+        "collocation_points": 121,
+        "unknowns": 25,
+        "condition_number": 129.8770165931973,
+        "sampled_residual": 0.00019370447008704161
+      },
+      "certificate": {
+        "residual_bound": {
+          "lower_numerator": 320077771,
+          "upper_numerator": 320077772,
+          "denominator": 1099511627776,
+          "lower": 0.0002911090368797886,
+          "upper": 0.0002911090377892833
+        },
+        "residual_polynomial_range": {
+          "lower": {
+            "lower_numerator": -304183649,
+            "upper_numerator": -304183648,
+            "denominator": 1099511627776,
+            "lower": -0.0002766534171314561,
+            "upper": -0.0002766534162219614
+          },
+          "upper": {
+            "lower_numerator": 320077771,
+            "upper_numerator": 320077772,
+            "denominator": 1099511627776,
+            "lower": 0.0002911090368797886,
+            "upper": 0.0002911090377892833
+          }
+        },
+        "remainder_bound": {
+          "lower_numerator": 0,
+          "upper_numerator": 1,
+          "denominator": 1099511627776,
+          "lower": 0.0,
+          "upper": 9.094947017729282e-13
+        },
+        "gradient_checks": [
+          {
+            "axis": 0,
+            "factored_gradient_lower": {
+              "lower_numerator": 1357165620127,
+              "upper_numerator": 1357165620128,
+              "denominator": 1099511627776,
+              "lower": 1.234334940933877,
+              "upper": 1.2343349409347866
+            },
+            "factored_gradient_upper": {
+              "lower_numerator": 4069209304197,
+              "upper_numerator": 4069209304198,
+              "denominator": 1099511627776,
+              "lower": 3.7009243025722753,
+              "upper": 3.700924302573185
+            }
+          },
+          {
+            "axis": 1,
+            "factored_gradient_lower": {
+              "lower_numerator": 1357165620127,
+              "upper_numerator": 1357165620128,
+              "denominator": 1099511627776,
+              "lower": 1.234334940933877,
+              "upper": 1.2343349409347866
+            },
+            "factored_gradient_upper": {
+              "lower_numerator": 4069209304197,
+              "upper_numerator": 4069209304198,
+              "denominator": 1099511627776,
+              "lower": 3.7009243025722753,
+              "upper": 3.700924302573185
+            }
+          }
+        ],
+        "taylor_degree": 28,
+        "precision_bits": 192,
+        "viscosity_interfaces": "strict downward cusps at x_j=0; C1 periodic joins at |x_j|=1"
+      },
+      "construction_seconds": 0.00044839998008683324,
+      "verification_seconds": 0.07755669998005033
+    },
+    {
+      "polynomial": {
+        "dimension": 2,
+        "order": 6,
+        "denominator_bits": 48,
+        "numerators": [
+          300493669831619,
+          150962244093318,
+          -11120940001043,
+          479371495783,
+          -16790610506,
+          443366707,
+          -8254167,
+          150962244093318,
+          33164240265834,
+          -10345138219832,
+          993762367176,
+          -47558301270,
+          1372888939,
+          -26101774,
+          -11120940001043,
+          -10345138219833,
+          3227026645549,
+          -309990791094,
+          14835144478,
+          -428435258,
+          8282642,
+          479371495783,
+          993762367176,
+          -309990791094,
+          29778015755,
+          -1425074944,
+          41152751,
+          -804052,
+          -16790610506,
+          -47558301270,
+          14835144478,
+          -1425074944,
+          68222764,
+          -2007120,
+          68042,
+          443366708,
+          1372888939,
+          -428435258,
+          41152751,
+          -2007120,
+          92061,
+          -31033,
+          -8254167,
+          -26101774,
+          8282642,
+          -804052,
+          68042,
+          -31033,
+          27407
+        ],
+        "collocation_points": 225,
+        "unknowns": 49,
+        "condition_number": 333.4332083613761,
+        "sampled_residual": 8.326166689442971e-08
+      },
+      "certificate": {
+        "residual_bound": {
+          "lower_numerator": 194794,
+          "upper_numerator": 194795,
+          "denominator": 1099511627776,
+          "lower": 1.7716411093715578e-07,
+          "upper": 1.7716502043185756e-07
+        },
+        "residual_polynomial_range": {
+          "lower": {
+            "lower_numerator": -194795,
+            "upper_numerator": -194794,
+            "denominator": 1099511627776,
+            "lower": -1.7716502043185756e-07,
+            "upper": -1.7716411093715578e-07
+          },
+          "upper": {
+            "lower_numerator": 167479,
+            "upper_numerator": 167480,
+            "denominator": 1099511627776,
+            "lower": 1.5232126315822825e-07,
+            "upper": 1.5232217265293002e-07
+          }
+        },
+        "remainder_bound": {
+          "lower_numerator": 0,
+          "upper_numerator": 1,
+          "denominator": 1099511627776,
+          "lower": 0.0,
+          "upper": 9.094947017729282e-13
+        },
+        "gradient_checks": [
+          {
+            "axis": 0,
+            "factored_gradient_lower": {
+              "lower_numerator": 1356468421219,
+              "upper_numerator": 1356468421220,
+              "denominator": 1099511627776,
+              "lower": 1.2337008422209692,
+              "upper": 1.2337008422218787
+            },
+            "factored_gradient_upper": {
+              "lower_numerator": 4069404130965,
+              "upper_numerator": 4069404130966,
+              "denominator": 1099511627776,
+              "lower": 3.701101496485535,
+              "upper": 3.7011014964864444
+            }
+          },
+          {
+            "axis": 1,
+            "factored_gradient_lower": {
+              "lower_numerator": 1356468421218,
+              "upper_numerator": 1356468421219,
+              "denominator": 1099511627776,
+              "lower": 1.2337008422200597,
+              "upper": 1.2337008422209692
+            },
+            "factored_gradient_upper": {
+              "lower_numerator": 4069404130965,
+              "upper_numerator": 4069404130966,
+              "denominator": 1099511627776,
+              "lower": 3.701101496485535,
+              "upper": 3.7011014964864444
+            }
+          }
+        ],
+        "taylor_degree": 28,
+        "precision_bits": 192,
+        "viscosity_interfaces": "strict downward cusps at x_j=0; C1 periodic joins at |x_j|=1"
+      },
+      "construction_seconds": 0.001707599963992834,
+      "verification_seconds": 0.08391960000153631
+    },
+    {
+      "polynomial": {
+        "dimension": 2,
+        "order": 8,
+        "denominator_bits": 48,
+        "numerators": [
+          300493672671966,
+          150962243499240,
+          -11120939935342,
+          479371409633,
+          -16790492630,
+          443313755,
+          -8392866,
+          116106,
+          -1203,
+          150962243499241,
+          33164240669869,
+          -10345138232675,
+          993762317286,
+          -47558186281,
+          1372863439,
+          -26585458,
+          369831,
+          -3839,
+          -11120939935342,
+          -10345138232675,
+          3227026547027,
+          -309990771245,
+          14835135715,
+          -428246256,
+          8292969,
+          -115374,
+          1208,
+          479371409633,
+          993762317286,
+          -309990771245,
+          29777963359,
+          -1425075097,
+          41137686,
+          -796633,
+          11081,
+          -115,
+          -16790492630,
+          -47558186280,
+          14835135715,
+          -1425075097,
+          68199392,
+          -1968712,
+          38126,
+          -538,
+          10,
+          443313755,
+          1372863439,
+          -428246256,
+          41137686,
+          -1968712,
+          56830,
+          -1098,
+          14,
+          -1,
+          -8392866,
+          -26585458,
+          8292969,
+          -796633,
+          38126,
+          -1098,
+          23,
+          -1,
+          0,
+          116106,
+          369831,
+          -115374,
+          11082,
+          -538,
+          14,
+          -1,
+          3,
+          -2,
+          -1203,
+          -3839,
+          1208,
+          -115,
+          10,
+          -1,
+          0,
+          -2,
+          2
+        ],
+        "collocation_points": 361,
+        "unknowns": 81,
+        "condition_number": 664.5963718985339,
+        "sampled_residual": 8.874678769643651e-12
+      },
+      "certificate": {
+        "residual_bound": {
+          "lower_numerator": 39,
+          "upper_numerator": 40,
+          "denominator": 1099511627776,
+          "lower": 3.54702933691442e-11,
+          "upper": 3.637978807091713e-11
+        },
+        "residual_polynomial_range": {
+          "lower": {
+            "lower_numerator": -33,
+            "upper_numerator": -32,
+            "denominator": 1099511627776,
+            "lower": -3.001332515850663e-11,
+            "upper": -2.9103830456733704e-11
+          },
+          "upper": {
+            "lower_numerator": 39,
+            "upper_numerator": 40,
+            "denominator": 1099511627776,
+            "lower": 3.54702933691442e-11,
+            "upper": 3.637978807091713e-11
+          }
+        },
+        "remainder_bound": {
+          "lower_numerator": 0,
+          "upper_numerator": 1,
+          "denominator": 1099511627776,
+          "lower": 0.0,
+          "upper": 9.094947017729282e-13
+        },
+        "gradient_checks": [
+          {
+            "axis": 0,
+            "factored_gradient_lower": {
+              "lower_numerator": 1356468100107,
+              "upper_numerator": 1356468100108,
+              "denominator": 1099511627776,
+              "lower": 1.2337005501713065,
+              "upper": 1.233700550172216
+            },
+            "factored_gradient_upper": {
+              "lower_numerator": 4069404300194,
+              "upper_numerator": 4069404300195,
+              "denominator": 1099511627776,
+              "lower": 3.7011016503984138,
+              "upper": 3.7011016503993233
+            }
+          },
+          {
+            "axis": 1,
+            "factored_gradient_lower": {
+              "lower_numerator": 1356468100108,
+              "upper_numerator": 1356468100109,
+              "denominator": 1099511627776,
+              "lower": 1.233700550172216,
+              "upper": 1.2337005501731255
+            },
+            "factored_gradient_upper": {
+              "lower_numerator": 4069404300194,
+              "upper_numerator": 4069404300195,
+              "denominator": 1099511627776,
+              "lower": 3.7011016503984138,
+              "upper": 3.7011016503993233
+            }
+          }
+        ],
+        "taylor_degree": 28,
+        "precision_bits": 192,
+        "viscosity_interfaces": "strict downward cusps at x_j=0; C1 periodic joins at |x_j|=1"
+      },
+      "construction_seconds": 0.002872199984267354,
+      "verification_seconds": 0.09415730001637712
+    }
+  ],
+  "records": [
+    {
+      "dimension": 2,
+      "approximation": "bilinear_32",
+      "auxiliary_order": 6,
+      "input_hashes": {
+        "results/twod_critic_32.npz": "a6db501a5526c78abff160369201f3e91d18d9c9acff0ef4e2fb4367dd9212a0"
+      },
+      "distance": {
+        "lower_numerator": 101223070216,
+        "upper_numerator": 101223489384,
+        "denominator": 1099511627776,
+        "lower": 0.0920618460586411,
+        "upper": 0.09206222728971625,
+        "initial_cells": 1024,
+        "subdivisions": 72,
+        "seconds": 0.28921390004688874
+      },
+      "error_interval": {
+        "lower_numerator": 101222875421,
+        "upper_numerator": 101223684179,
+        "denominator": 1099511627776,
+        "lower": 0.09206166889362066,
+        "upper": 0.09206240445473668,
+        "width_numerator": 808758,
+        "width": 7.355611160164699e-07,
+        "upper_to_lower_ratio": 1.0000079898737972
+      }
+    },
+    {
+      "dimension": 2,
+      "approximation": "bilinear_64",
+      "auxiliary_order": 6,
+      "input_hashes": {
+        "results/twod_critic_64.npz": "846eb5dbe4e82d8476194193b4fad9510a5d1d673a3305b56994fa58c400f325"
+      },
+      "distance": {
+        "lower_numerator": 49784502069,
+        "upper_numerator": 49784661530,
+        "denominator": 1099511627776,
+        "lower": 0.045278740862158884,
+        "upper": 0.04527888589109352,
+        "initial_cells": 4096,
+        "subdivisions": 48,
+        "seconds": 1.01419260003604
+      },
+      "error_interval": {
+        "lower_numerator": 49784307274,
+        "upper_numerator": 49784856325,
+        "denominator": 1099511627776,
+        "lower": 0.04527856369713845,
+        "upper": 0.045279063056113955,
+        "width_numerator": 549051,
+        "width": 4.99358975503128e-07,
+        "upper_to_lower_ratio": 1.0000110285957577
+      }
+    }
+  ],
+  "design": {
+    "purpose": "Enclose the uniform error of every supplied approximation to an absolute interval width at most 1e-6, using an independently computed auxiliary function and verified sub/supersolutions.",
+    "development": "Selected after exploratory calculations. The tested even Chebyshev orders 4, 6 and 8 are all retained; the first satisfying the residual tolerance is used.",
+    "dimensions": [
+      1,
+      2
+    ],
+    "orders": [
+      4,
+      6,
+      8
+    ],
+    "coefficient_denominator_bits": 48,
+    "precision_bits": 192,
+    "cost_taylor_degree": 28,
+    "error_interval_tolerance": "0.000001",
+    "distance_interval_tolerance": "0.0000005",
+    "auxiliary_selection": "First order whose certified residual is no larger than one quarter of the final interval tolerance.",
+    "neural_approximations": [
+      "MLP",
+      "Min2"
+    ],
+    "bilinear_sides": [
+      32,
+      64
+    ],
+    "bilinear_input_hashes": {
+      "32": "a6db501a5526c78abff160369201f3e91d18d9c9acff0ef4e2fb4367dd9212a0",
+      "64": "846eb5dbe4e82d8476194193b4fad9510a5d1d673a3305b56994fa58c400f325"
+    },
+    "construction_inputs": "Only the explicit running cost and speed, reflection symmetry, and the locations x_j=0 and |x_j|=1 of the interfaces. No exact value-function samples, coefficients, derivatives or reference error are supplied.",
+    "additional_structure": "The reflected polynomial representation assumes the interface geometry of these manufactured problems. Gradient signs and all viscosity inequalities are subsequently verified. This is an additional PDE approximation, not a universally sharp contact residual estimate.",
+    "retrain_original_approximations": false
+  }
+}

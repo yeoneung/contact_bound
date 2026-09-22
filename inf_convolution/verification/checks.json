@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "independent_direct_residual_identities",
+      "count": 160,
+      "status": "PASS"
+    },
+    {
+      "name": "root_brackets_and_all_rational_certificates_replayed",
+      "count": 10,
+      "status": "PASS"
+    },
+    {
+      "name": "uniform_sinusoidal_proof_constants",
+      "status": "PASS"
+    },
+    {
+      "name": "additional_concave_profile_contact_diagnostic",
+      "status": "PASS",
+      "note": "Numerical diagnostic; the general result rests on its analytic proof."
+    }
+  ]
+}

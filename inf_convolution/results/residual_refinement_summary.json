@@ -1,0 +1,96 @@
+{
+  "data_sha256": "5ef3017163afa0f6508ff67a8d83c80efac6129ad5df61eded730a15395f07ac",
+  "paths": 63,
+  "target_outcomes": 189,
+  "certificate_attempts": 486,
+  "failed_fit_proposals": 18,
+  "failed_linear_programs": 0,
+  "all": [
+    {
+      "method": "refined_polynomial",
+      "baseline": "polynomial",
+      "pairs": 21,
+      "common_success": 12,
+      "method_success": 20,
+      "baseline_success": 12,
+      "faster": 11,
+      "median_speedup": 2.084823987520652,
+      "min_speedup": 0.9069329205068276,
+      "max_speedup": 4.909765333885968,
+      "smaller_grid": 12,
+      "median_node_ratio": 9.249541657531593
+    },
+    {
+      "method": "refined_corrected",
+      "baseline": "polynomial",
+      "pairs": 21,
+      "common_success": 12,
+      "method_success": 20,
+      "baseline_success": 12,
+      "faster": 11,
+      "median_speedup": 2.498613450809515,
+      "min_speedup": 0.9064538738078614,
+      "max_speedup": 3.273598127041582,
+      "smaller_grid": 12,
+      "median_node_ratio": 3.879706152433425
+    },
+    {
+      "method": "refined_corrected",
+      "baseline": "refined_polynomial",
+      "pairs": 21,
+      "common_success": 20,
+      "method_success": 20,
+      "baseline_success": 20,
+      "faster": 12,
+      "median_speedup": 1.2882772357702834,
+      "min_speedup": 0.4233871924123725,
+      "max_speedup": 2.5487991120881843,
+      "smaller_grid": 1,
+      "median_node_ratio": 1.0
+    }
+  ],
+  "prospective": [
+    {
+      "method": "refined_polynomial",
+      "baseline": "polynomial",
+      "pairs": 12,
+      "common_success": 8,
+      "method_success": 12,
+      "baseline_success": 8,
+      "faster": 7,
+      "median_speedup": 1.9369211598089657,
+      "min_speedup": 0.9069329205068276,
+      "max_speedup": 3.372214824732263,
+      "smaller_grid": 8,
+      "median_node_ratio": 9.249541657531593
+    },
+    {
+      "method": "refined_corrected",
+      "baseline": "polynomial",
+      "pairs": 12,
+      "common_success": 8,
+      "method_success": 12,
+      "baseline_success": 8,
+      "faster": 7,
+      "median_speedup": 2.498613450809515,
+      "min_speedup": 0.9064538738078614,
+      "max_speedup": 3.273598127041582,
+      "smaller_grid": 8,
+      "median_node_ratio": 9.249541657531593
+    },
+    {
+      "method": "refined_corrected",
+      "baseline": "refined_polynomial",
+      "pairs": 12,
+      "common_success": 12,
+      "method_success": 12,
+      "baseline_success": 12,
+      "faster": 8,
+      "median_speedup": 1.330253076619629,
+      "min_speedup": 0.4233871924123725,
+      "max_speedup": 2.5487991120881843,
+      "smaller_grid": 0,
+      "median_node_ratio": 1.0
+    }
+  ]
+}

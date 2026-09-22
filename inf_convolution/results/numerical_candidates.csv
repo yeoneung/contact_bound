@@ -1,0 +1,66 @@
+n,exponent,status,selected,certified_upper,reason
+64,2,certified,False,0.2902603506842287,
+64,3,certified,False,0.20428666028660114,
+64,4,certified,True,0.06761307684753301,
+64,5,certified,False,0.26500017147160293,
+64,6,certified,False,0.7955425925360925,
+64,7,certified,False,1.0600253490710534,
+64,8,inadmissible,False,,The reconstructed branch is not admissible.
+64,9,inadmissible,False,,No strict contact bifurcation at the origin.
+64,10,inadmissible,False,,No strict contact bifurcation at the origin.
+64,11,inadmissible,False,,No strict contact bifurcation at the origin.
+64,12,inadmissible,False,,No strict contact bifurcation at the origin.
+64,13,inadmissible,False,,No strict contact bifurcation at the origin.
+64,14,inadmissible,False,,No strict contact bifurcation at the origin.
+128,2,certified,False,0.30122496825483774,
+128,3,certified,False,0.20599924186863336,
+128,4,certified,False,0.0683952661004683,
+128,5,certified,True,0.02049891866406455,
+128,6,certified,False,0.2530868448631959,
+128,7,certified,False,0.7815688812726647,
+128,8,certified,False,1.058497226894092,
+128,9,inadmissible,False,,The reconstructed branch is not admissible.
+128,10,inadmissible,False,,No strict contact bifurcation at the origin.
+128,11,inadmissible,False,,No strict contact bifurcation at the origin.
+128,12,inadmissible,False,,No strict contact bifurcation at the origin.
+128,13,inadmissible,False,,No strict contact bifurcation at the origin.
+128,14,inadmissible,False,,No strict contact bifurcation at the origin.
+256,2,certified,False,0.30687981207038634,
+256,3,certified,False,0.20658573379319944,
+256,4,certified,False,0.07129663812741224,
+256,5,certified,False,0.017021946033424322,
+256,6,certified,True,0.012722435121400855,
+256,7,certified,False,0.24829531108289993,
+256,8,certified,False,0.7712741822919977,
+256,9,certified,False,1.0577629320877204,
+256,10,inadmissible,False,,The reconstructed branch is not admissible.
+256,11,inadmissible,False,,No strict contact bifurcation at the origin.
+256,12,inadmissible,False,,No strict contact bifurcation at the origin.
+256,13,inadmissible,False,,No strict contact bifurcation at the origin.
+256,14,inadmissible,False,,No strict contact bifurcation at the origin.
+512,2,certified,False,0.30970027890859025,
+512,3,certified,False,0.2069331038516374,
+512,4,certified,False,0.07274415284930282,
+512,5,certified,False,0.017784300965744418,
+512,6,certified,True,0.004337983718765254,
+512,7,certified,False,0.012652027452352495,
+512,8,certified,False,0.24636855153257828,
+512,9,certified,False,0.7653349720441596,
+512,10,certified,False,1.057403209699443,
+512,11,inadmissible,False,,The reconstructed branch is not admissible.
+512,12,inadmissible,False,,No strict contact bifurcation at the origin.
+512,13,inadmissible,False,,No strict contact bifurcation at the origin.
+512,14,inadmissible,False,,No strict contact bifurcation at the origin.
+1024,2,certified,False,0.3109329258258164,
+1024,3,certified,False,0.20758806118279116,
+1024,4,certified,False,0.07347832707291227,
+1024,5,certified,False,0.0182410582856958,
+1024,6,certified,False,0.004406163165020009,
+1024,7,certified,True,0.001326419018395456,
+1024,8,certified,False,0.013374781497808498,
+1024,9,certified,False,0.24547693226242565,
+1024,10,certified,False,0.7621725391955203,
+1024,11,certified,False,1.0572252091843806,
+1024,12,inadmissible,False,,The reconstructed branch is not admissible.
+1024,13,inadmissible,False,,No strict contact bifurcation at the origin.
+1024,14,inadmissible,False,,No strict contact bifurcation at the origin.

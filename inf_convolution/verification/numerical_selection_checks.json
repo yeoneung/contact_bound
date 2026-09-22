@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "inputs_reproduced": 5,
+  "certificates_replayed": 40,
+  "inadmissible_scales_replayed": 25,
+  "independent_residual_identities": 40,
+  "reference_error_enclosures_replayed": 5,
+  "independent_reference_integrals": 4,
+  "selection_sha256": "3d2f86393f796ca06934723e7f826ca43e51db8506099c795d5d9ca296a26451",
+  "reference_not_imported_by_selection": true
+}

@@ -1,0 +1,70 @@
+{
+  "status": "rigorous_junction_enclosures",
+  "benchmark_sha256": "c94c6f76ebd4dcd4b4608a2fc4493b9501a930431e810f4840c0bff64beda82a",
+  "case": "skew",
+  "n": 256,
+  "epsilon": [
+    1,
+    32
+  ],
+  "events": {
+    "uncorrected": [
+      {
+        "lower": {
+          "numerator": 17786833998341057610061447168,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.014031337968947195
+        },
+        "upper": {
+          "numerator": 17786833998341057610061479936,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.014031337968947195
+        },
+        "left_derivative": {
+          "numerator": 1624575342809645035104561934866,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 1.2815639755285522
+        },
+        "right_derivative": {
+          "numerator": -1732378475205848347811802188183,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": -1.3666056521362817
+        },
+        "old_junction_value_jump_lower": {
+          "numerator": 4460640327793070517113732606,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.0035188247668481924
+        },
+        "old_junction_value_jump_upper": {
+          "numerator": 4460640327793070517113826880,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.0035188247668481924
+        }
+      }
+    ],
+    "corrected": [
+      {
+        "lower": {
+          "numerator": 19509097196163283112802779136,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.015389964074210071
+        },
+        "upper": {
+          "numerator": 19509097196163283112802811904,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.015389964074210071
+        },
+        "left_derivative": {
+          "numerator": 1645911285786251490782985600551,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 1.2983950668188218
+        },
+        "right_derivative": {
+          "numerator": -1636285636610869749420183577774,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": -1.2908017684969904
+        }
+      }
+    ]
+  }
+}

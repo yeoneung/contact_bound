@@ -1,0 +1,175 @@
+{
+  "status": "post_selection_reference_audit",
+  "selection_sha256": "3d2f86393f796ca06934723e7f826ca43e51db8506099c795d5d9ca296a26451",
+  "relative_error_enclosure_tolerance": [
+    1,
+    1000
+  ],
+  "records": [
+    {
+      "n": 64,
+      "selected_exponent": 4,
+      "selected_error_upper": {
+        "numerator": 85709757449052616429310120598,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.06761307684753301
+      },
+      "reference_error": {
+        "lower": {
+          "numerator": 13177277342429009432520589166,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.010395038932696877
+        },
+        "upper": {
+          "numerator": 13184449354694345875403990143,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.010400696652784766
+        },
+        "cells": 116
+      },
+      "effectivity_upper": {
+        "numerator": 8245256030687724799842601926925,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 6.5043601361473256
+      },
+      "differential_residual_lower": {
+        "numerator": 1722262239476500441110123066163,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 1.358625349261399
+      },
+      "reference_audit_seconds": 0.009444600029382855
+    },
+    {
+      "n": 128,
+      "selected_exponent": 5,
+      "selected_error_upper": {
+        "numerator": 25985466548531081867015544619,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.02049891866406455
+      },
+      "reference_error": {
+        "lower": {
+          "numerator": 6594201721587076030473403517,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.0052019079393011355
+        },
+        "upper": {
+          "numerator": 6597286781047938189831432868,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.005204341622100091
+        },
+        "cells": 181
+      },
+      "effectivity_upper": {
+        "numerator": 4995372246441979783678058369624,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 3.9406538722441393
+      },
+      "differential_residual_lower": {
+        "numerator": 1726492180111487330867179893555,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 1.361962184059746
+      },
+      "reference_audit_seconds": 0.01610050001181662
+    },
+    {
+      "n": 256,
+      "selected_exponent": 6,
+      "selected_error_upper": {
+        "numerator": 16127602518008501867230618176,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.012722435121400855
+      },
+      "reference_error": {
+        "lower": {
+          "numerator": 3298490154515091465551109310,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.00260204992915337
+        },
+        "upper": {
+          "numerator": 3299991882395201347727857661,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.002603234583568269
+        },
+        "cells": 310
+      },
+      "effectivity_upper": {
+        "numerator": 6198037300251169751053015110513,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 4.889389315269734
+      },
+      "differential_residual_lower": {
+        "numerator": 1728624603033556817568186184499,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 1.3636443691363638
+      },
+      "reference_audit_seconds": 0.032735400018282235
+    },
+    {
+      "n": 512,
+      "selected_exponent": 6,
+      "selected_error_upper": {
+        "numerator": 5499047664873061498957321500,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.004337983718765254
+      },
+      "reference_error": {
+        "lower": {
+          "numerator": 1649587810171406895393162328,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.0013012953331733627
+        },
+        "upper": {
+          "numerator": 1650380887999062603258168335,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.0013019209612663979
+        },
+        "cells": 567
+      },
+      "effectivity_upper": {
+        "numerator": 4225826009429376162520262841343,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 3.333588931104954
+      },
+      "differential_residual_lower": {
+        "numerator": 1729695226657347466535357330227,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 1.3644889422573783
+      },
+      "reference_audit_seconds": 0.07956869999179617
+    },
+    {
+      "n": 1024,
+      "selected_exponent": 7,
+      "selected_error_upper": {
+        "numerator": 1681435864823138623585729666,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 0.001326419018395456
+      },
+      "reference_error": {
+        "lower": {
+          "numerator": 824879015814188687463036648,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.0006507148071129982
+        },
+        "upper": {
+          "numerator": 825286171928101650632277104,
+          "denominator": 1267650600228229401496703205376,
+          "decimal": 0.0006510359966535858
+        },
+        "cells": 1073
+      },
+      "effectivity_upper": {
+        "numerator": 2583982793142669670629697485279,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 2.038403005274045
+      },
+      "differential_residual_lower": {
+        "numerator": 1730231647686843836343113691955,
+        "denominator": 1267650600228229401496703205376,
+        "decimal": 1.3649121038362864
+      },
+      "reference_audit_seconds": 0.2360385999782011
+    }
+  ]
+}

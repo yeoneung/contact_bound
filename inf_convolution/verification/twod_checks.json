@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "selection_sha256": "888219952fd7cd745c5cb435ac1db7e5dd846fdc1fbe6342d77082e24ab872ff",
+  "certificates_replayed": 10,
+  "numerical_inputs_recomputed": 2,
+  "reference_intervals_replayed": 2,
+  "independent_precision_digits": 70,
+  "independent_jet_points": 4,
+  "independent_bilinear_points": 6,
+  "uncorrected_comparisons_replayed": 2
+}
